@@ -1,0 +1,8 @@
+openegiz
+tests
+docs/history
+__pycache__
+**/__pycache__
+.git
+.env
+integration/vendor/extended-api

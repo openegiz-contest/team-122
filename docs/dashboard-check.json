@@ -1,0 +1,30 @@
+{
+  "checked_at_unix": 1792952662.7519448,
+  "panels": [
+    {
+      "panel": "Methane V7 (%)",
+      "points": 28,
+      "latest": "0.23128229377519152",
+      "latest_age_s": 2.739006
+    },
+    {
+      "panel": "Methane V9 (%)",
+      "points": 28,
+      "latest": "0.16554289008289894",
+      "latest_age_s": 2.74368
+    },
+    {
+      "panel": "Flow e6 (m3/s)",
+      "points": 28,
+      "latest": "308.08950090792024",
+      "latest_age_s": 2.747838
+    },
+    {
+      "panel": "Forecast envelope width (percentage points)",
+      "points": 28,
+      "latest": "0",
+      "latest_age_s": 2.751435
+    }
+  ],
+  "passed": true
+}

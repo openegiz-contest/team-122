@@ -1,0 +1,15 @@
+{
+  "name": "prospective sensor utility audit v1",
+  "frozen_before_run": true,
+  "seed": 20261026,
+  "truth_parameters": "16 on-grid resistance/gas pairs plus 12 independently seeded log-uniform off-grid pairs in [0.5,4]",
+  "fan_pairs": [[0.8,1.0],[1.0,1.0],[1.15,0.8]],
+  "horizons_s": [60,180,600],
+  "initial_conditions": ["nominal known transient", "parameter-dependent equilibrium"],
+  "missing_masks": ["all", "gas only", "flow only", "q_e6,c_V7,c_V9"],
+  "bounded_measurement_error_fractions": [-1,0,1],
+  "policies": ["forecast gain/cost", "current spread/tolerance/cost", "methane priority", "fastest then cheapest", "exact uniform random expectation", "no repair", "clairvoyant oracle"],
+  "primary_metrics": ["actual forecast width reduction per cost", "remaining width at identical absolute horizon", "coverage of simulated truth", "conflict frequency"],
+  "secondary_metrics": ["worst-case paired advantage", "wins/ties/losses", "threshold classification at illustrative 1 percent", "oracle regret"],
+  "rules": ["Never tune the method after examining these outcomes", "Report on-grid and off-grid separately", "Keep all records and losing cases", "Random baseline enumerates all eligible channels, not one lucky draw", "Empty posterior is a conflict, not zero uncertainty", "No confidence interval claiming independent real-world samples from this deterministic design", "All strategies share candidate bank, available readings, horizon and repair delay", "This is synthetic model evidence, not field validation"]
+}

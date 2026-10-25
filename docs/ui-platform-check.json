@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checked_at_unix": 1792952568.7502956,
+  "checks": [
+    "Scenario fan: command receipt and Ditto state verified",
+    "Scenario resistance: command receipt and Ditto state verified",
+    "Scenario closure: command receipt and Ditto state verified",
+    "Scenario gas: command receipt and Ditto state verified",
+    "Scenario loss: command receipt and Ditto state verified",
+    "Scenario blind_all: command receipt and Ditto state verified",
+    "Scenario delay: command receipt and Ditto state verified",
+    "Scenario freeze: command receipt and Ditto state verified",
+    "Scenario bias: command receipt and Ditto state verified",
+    "Scenario noise: command receipt and Ditto state verified",
+    "Scenario outside: command receipt and Ditto state verified",
+    "Scenario cancel: command receipt and Ditto state verified",
+    "JSON replay in platform mode: truth, parameters, pause and receipt verified through Ditto"
+  ]
+}

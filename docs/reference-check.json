@@ -1,0 +1,115 @@
+{
+  "source": "https://doi.org/10.1371/journal.pone.0320326",
+  "license": "CC BY 4.0",
+  "kind": "conditional steady reproduction, not independent field validation",
+  "assumptions": [
+    "equal exterior reduced pressures",
+    "zero additional natural head",
+    "rounded published coefficients"
+  ],
+  "iterations": 3,
+  "max_energy_residual_pa": 6.680238584522158e-10,
+  "max_continuity_residual_m3s": 0.0,
+  "max_relative_flow_difference": 0.010137831988221602,
+  "branches": [
+    {
+      "branch": "e1",
+      "from": "V1",
+      "to": "V2",
+      "R": 0.00394,
+      "published_q": 373.9,
+      "computed_q": 373.3907081316573,
+      "relative_difference": -0.0013621071632594628
+    },
+    {
+      "branch": "e2",
+      "from": "V2",
+      "to": "V5",
+      "R": 0.00417,
+      "published_q": 373.9,
+      "computed_q": 373.3907081316573,
+      "relative_difference": -0.0013621071632594628
+    },
+    {
+      "branch": "e3",
+      "from": "V3",
+      "to": "V4",
+      "R": 0.00702,
+      "published_q": 320.32,
+      "computed_q": 319.76125912586565,
+      "relative_difference": -0.0017443209107590452
+    },
+    {
+      "branch": "e4",
+      "from": "V4",
+      "to": "V6",
+      "R": 0.00431,
+      "published_q": 320.32,
+      "computed_q": 319.76125912586565,
+      "relative_difference": -0.0017443209107590452
+    },
+    {
+      "branch": "e5",
+      "from": "V5",
+      "to": "V6",
+      "R": 0.00651,
+      "published_q": 65.97,
+      "computed_q": 65.30120722373702,
+      "relative_difference": -0.010137831988221602
+    },
+    {
+      "branch": "e6",
+      "from": "V5",
+      "to": "V7",
+      "R": 0.00744,
+      "published_q": 307.93,
+      "computed_q": 308.08950090792024,
+      "relative_difference": 0.0005179778128803214
+    },
+    {
+      "branch": "e7",
+      "from": "V6",
+      "to": "V9",
+      "R": 0.00356,
+      "published_q": 386.29,
+      "computed_q": 385.0624663496027,
+      "relative_difference": -0.0031777515607376294
+    },
+    {
+      "branch": "e8",
+      "from": "V7",
+      "to": "V8",
+      "R": 0.00576,
+      "published_q": 307.93,
+      "computed_q": 308.08950090792024,
+      "relative_difference": 0.0005179778128803214
+    },
+    {
+      "branch": "e9",
+      "from": "V9",
+      "to": "V10",
+      "R": 0.00357,
+      "published_q": 386.29,
+      "computed_q": 385.0624663496027,
+      "relative_difference": -0.0031777515607376294
+    }
+  ],
+  "node_pressures_pa": {
+    "V1": 0.0,
+    "V3": 0.0,
+    "V8": 0.0,
+    "V10": 0.0,
+    "V2": -549.3172464210983,
+    "V5": -1130.7012356535806,
+    "V4": -717.7757851210682,
+    "V6": -1158.4614879518094,
+    "V7": -1836.8996414920846,
+    "V9": -1686.31373460062
+  },
+  "does_not_validate": [
+    "methane sources",
+    "gas mixing volumes",
+    "dynamic sensor errors",
+    "industrial safety"
+  ]
+}

@@ -1,43 +1,106 @@
-# <Team name>: a digital mine on OpenEgiz
+# VentObserve — команда «серики»
 
-> Team Repository of the contest “Digital Mine on OpenEgiz”. **Replace the contents of this file with the instructions for your Submission.** The AI Jury runs the Submission strictly by these instructions, from scratch, in the Judge Environment. Accepted languages: English, Kazakh, Russian.
+Исследовательский цифровой двойник эквивалентной вентиляционной системы Gucheng: два притока, два вытяжных вентилятора, девять ветвей и десять узлов. Воздушные параметры опубликованы; модель переноса метана, ошибки датчиков и ремонт — явно обозначенные допущения. Инженер исследует последствия изменений и выбирает измерение для уточнения прогноза метана.
 
-> **Start with the Concept**, the first section of [SUBMISSION.md](SUBMISSION.md): the Team writes it before any code. What AI agents build from this Template without a Concept is the Default Solution, published on the [contest site](https://openegiz-contest.github.io/) as the low bar: a Submission that does not go beyond it gets low levels in the Rubric. AI agents read [AGENTS.md](AGENTS.md).
 
-## Running
+## Запуск конкурсной версии с нуля
 
-Requirements (Docker, `make`, Windows/WSL2 setup) are in [OPENEGIZ.md](OPENEGIZ.md) / [OPENEGIZ.ru.md](OPENEGIZ.ru.md).
+Из корня этого репозитория на Ubuntu с установленным Docker Engine и Compose:
 
-```bash
-sudo apt install -y make   # if make is missing (clean Ubuntu)
-make up            # the OpenEgiz platform
-make example-mine  # the Example Mine: twins, simulator, dashboard
+```sh
+sudo apt-get update
+sudo apt-get install -y python3
+python3 integration/start-platform.py
 ```
 
-Replace these commands with the commands of your Submission. The Submission must start by following these instructions without manual intervention (Rules, clause 6.4); downloading datasets and models and building are also listed here.
+Запускайте от пользователя с доступом к Docker. Если Docker требует root, последнюю команду выполните как `sudo python3 integration/start-platform.py`. Python-зависимости платформенного приложения устанавливаются внутри Docker; `make`, ключи API и учётные записи внешних сервисов не требуются. Интернет нужен для контейнеров и зафиксированных зависимостей. Не запускайте одновременно автономный сервер ниже: он использует тот же порт.
 
-## What to open
+Открыть **http://localhost:8765/** — основной интерфейс VentObserve. В шапке должен быть источник **Ditto**. История: http://localhost:3000/ (Grafana); пользователь `admin`, сгенерированный пароль `GRAFANA_ADMIN_PASSWORD` хранится локально в `openegiz/deploy/compose/.env`. Не публикуйте этот файл.
 
-- Grafana: the address and login are printed by `make up`.
-- <where to see the mine visualization, which dashboards>
+Скрипт сам создаёт секреты, запускает MQTT → Ditto → приложение и проверяет свежие снимки, команды и историю. Остановка с сохранением томов: `python3 integration/start-platform.py --stop` (с `sudo`, если запускали так).
 
-## Repository contents
+Используется комплект OpenEgiz в `openegiz/` с проверенным Compose-наложением; исходные файлы платформы в корне выданного шаблона сохранены. Не требуется запускать второй стек через шаблонный `make up`.
 
-| Path | Contents |
-|---|---|
-| `team/` | Directory for the Team's code. Using it is optional: any part may be changed, including the platform core |
-| `SUBMISSION.md` | Description of the Submission: **required** |
-| `presentation.pdf` | Presentation: **required**, in the repository root |
-| `AGENTS.md`, `CLAUDE.md` | Instructions for your AI agents (Codex, Claude Code and others read them automatically) |
-| `examples/mine/` | The Example Mine: shows how a digital mine is built on OpenEgiz. It is not a basis for the Submission |
-| `OPENEGIZ.md`, `OPENEGIZ.ru.md` | Documentation of the OpenEgiz platform v1.0.4 |
+Команда: **серики**, участник: **awer13**. Репозиторий: https://github.com/openegiz-contest/team-122 . Замысел, происхождение данных и ограничения — в [SUBMISSION.md](SUBMISSION.md).
 
-The Submission is the `main` branch at the moment of the Freeze; other branches are not evaluated.
+## Локальный запуск
 
-## License
+Python 3.11+; внешние библиотеки для локальной модели не требуются. Из корня проекта:
 
-The Submission is distributed under the MIT license, see [LICENSE](LICENSE). Copyright belongs to the Team: add the line `Copyright (c) 2026 <Team members>` to `LICENSE`.
+```sh
+python -m app.server
+```
 
----
+Открыть http://127.0.0.1:8765/ . Остановка Ctrl+C. Для другого свободного порта: `python -m app.server --port 8766`. Один сервер — один общий эксперимент для всех вкладок. Состояние в памяти; сохраняйте JSON. Старый двухзонный стенд доступен отдельно: `python -m app.server --model legacy --port 8766`.
 
-Platform: [aleka07/openegiz](https://github.com/aleka07/openegiz). If the platform was useful to you, support the project with a star on GitHub.
+## Быстрая демонстрация
+
+1. Зафиксировать «до», нажать «Сопротивление e6 ×2». Проверить изменение e6, e5 и e7 и последующий рост метана V7.
+2. Закрыть e5: расход связи становится нулевым. «Отменить воздействия» восстанавливает команды, газ возвращается динамически.
+3. Для выбора измерения: сброс → пауза → потеря всех датчиков → газовыделение ×2. Объявленное событие расширяет гипотезы, сохраняя предыдущие концентрации. Выбрать горизонт и канал ремонта, затем продолжить. Ремонт расходомера занимает 10 с, газового датчика — 30 с модельного времени.
+4. Сохранить JSON и воспроизвести его. Журнал содержит seed, шаги, команды и подпись модели. Экспорт CSV показывает исторический эталон и оценку.
+
+Простая потеря измерения не стирает ранее полученную информацию и не обязана расширять диапазон при неизменных детерминированных параметрах.
+
+## Проверки
+
+```sh
+python -m unittest discover -s tests -v
+python -m app.reference
+python -m app.network_evaluation
+```
+
+Новые результаты — `docs/network-evaluation.json`: 288 стационарных и 288 дополнительных переходных опытов. План и момент расширения исследования зафиксированы в `docs/NETWORK_EVALUATION_PLAN.md`. Внутри дискретной сетки прогнозный выбор лучше простого правила в 120 случаях, равен в 456; проигрывает случайному выбору в 42 случаях и оракулу в 150. Это ограниченное модельное сравнение, не полевое доказательство.
+
+Старые 1536 случаев и интервальные гарантии относятся только к legacy v2. В них рейтинг совпадал с простым правилом во всех случаях. История сохранена в `docs/history/v2-before-network/`.
+
+## OpenEgiz
+
+Требуются Docker Engine и Docker Compose. Сначала остановить локальный сервер, занимающий порт 8765.
+
+```sh
+python integration/start-platform.py
+```
+
+Комплект содержит зафиксированный исходник OpenEgiz; `make` не требуется. Скрипт сохраняет существующие `.env`, генерирует локальные секреты только при отсутствии файла, поднимает Compose и выполняет реальную приёмку. Секреты не включать в репозиторий/архив. Для внешней копии платформы: `python integration/start-platform.py --platform-dir /path/to/openegiz`.
+
+Дополнительный API загружается по зафиксированному коммиту с GitHub codeload и проверяется SHA256; нужен интернет для этой загрузки, образов Docker и зависимостей npm. Исходник сохраняется в исключённом из Git локальном кэше `integration/vendor/extended-api/`. В Windows используется обычный Compose builder, чтобы избежать ошибки путей Bake. Shell-скрипты поставляются с LF.
+
+Цепочка: симулятор → MQTT → Eclipse Ditto → HTTP API → интерфейс. В платформенном режиме интерфейс получает снимок из Ditto; ошибка/устаревание дают HTTP 503, локальной подмены нет. Команда поступает симулятору через HTTP; подтверждение состояния проверяется после MQTT и Ditto. Фактический статус живой проверки: `docs/RELEASE_STATUS.md` и `docs/platform-check.json` (если он создан успешной приёмкой).
+
+Остановить стек без удаления данных: `python integration/start-platform.py --stop`. Не выполнять удаление томов для обычного перезапуска.
+
+## Данные и пределы
+
+Источник воздушной сети: Jia, Ma, Gao (2025), https://doi.org/10.1371/journal.pone.0320326, CC BY 4.0. Атрибуция — `docs/reference/ATTRIBUTION.md`. Равные внешние давления, отсутствие естественной тяги и законы подобия вентиляторов — допущения. Максимальное расхождение с опубликованными расходами около 1,014%; это условное воспроизведение режима, не независимая валидация.
+
+Газ — разбавленная примесь в смешанных узловых объёмах, без CFD и обратного влияния на расход. Источники синтетические, объёмы укрупнены из геометрии. Наблюдатель хранит конечные траектории и не гарантирует включение истины. Необъявленное изменение источника при потере всех датчиков может остаться незамеченным. Промышленная безопасность не подтверждена.
+
+Каталог, единицы и происхождение: `docs/objects.json`, `docs/PARAMETERS.md`. Модель: `docs/MODEL.md`. Сценарии: `docs/DEMO.md`. Итоговые материалы: `SUBMISSION.md`, `presentation.pdf`.
+
+## Обновление интерфейса и истории · 25 октября
+
+Изометрический разрез и режим «Схема связей» отображают одну и ту же топологию из Ditto. Положение объектов условно и не является маркшейдерским планом. Для ветвей доступны расходы, изменения от контрольной точки, длина, сечение и сопротивление; для вентиляторов — скорость и напор.
+
+После команды интерфейс ожидает соответствующие experiment_id и revision из источника данных. До подтверждения повторные команды блокируются; при отсутствии подтверждения показана ошибка. На паузе модельное время и ремонт не продвигаются. JSON теперь воспроизводится и в режиме платформы: заменённый эксперимент публикуется обычной цепочкой MQTT → Ditto.
+
+Для истории используется integration/telegraf.conf: скалярные метрики читаются из Ditto по HTTP каждые 5 с. Массивы истории из site.snapshot не разворачиваются в ряды InfluxDB. Панели Grafana: метан V7/V9, расход e6, ширина прогноза.
+
+Дополнительная проверка работающего стенда (не нажимать кнопки одновременно; проверка сбрасывает демонстрационный опыт):
+
+```sh
+python integration/smoke-ui-platform.py
+python integration/smoke-history.py
+```
+
+Отчёты: docs/ui-platform-check.json и docs/dashboard-check.json. Автоматический набор: 76 тестов. Чистая установка проверена в отдельном Docker-проекте с пустыми томами; точная среда судьи отдельно не проверена.
+
+
+Итоговое исправление истории: Telegraf опрашивает только четыре числовых feature в Ditto по HTTP каждые 5 с. Временная метка берётся из sample.wallTime, поэтому старое значение не становится новой точкой при обрыве. MQTT остаётся обязательным входным транспортом двойников. Это также устраняет зависание mqtt_consumer после неудачного повторного подключения (наблюдалось с Telegraf 1.37). Ранее описанное извлечение из событий заменено этим окончательным вариантом. Во время недоступности платформы возможны пропуски истории.
+
+
+## Метрическая модель и расширенная проверка выбора датчиков
+
+По умолчанию показана метрическая XYZ-схема. Все 9 длин точно совпадают с опубликованными; суммарная длина 21,91 км. Доступны план X/Y, профиль X/Z, изменение ракурса, вертикальный масштаб ×1/×4, слои расхода, скорости Q/A, давления и верхней оценки метана. В карточках — XYZ, длина, сечение, объём и происхождение. Координаты, глубина 500 м и вертикальные граничные ветви условны: это одна согласованная реализация эквивалентной сети, не фактический план шахты. Подробности: `docs/SPATIAL_MODEL.md`.
+
+В интерфейсе «Проверка полезности» показаны все семь стратегий и отрицательные результаты. Новый воспроизводимый аудит: `python -m app.sensor_utility`; 6048 комбинаций, заранее сохранённый план `docs/SENSOR_UTILITY_PLAN.json`, полный результат `docs/sensor-utility.json`. Итог и ограничения: `docs/SENSOR_UTILITY.md`. На 3456 случаях внутри сетки прогнозный выбор улучшает выигрыш на стоимость относительно текущего разброса в 615 случаях и совпадает в 2841. Но приоритет метана лучше в среднем; вне сетки обнаружены массовые конфликты и исключение истины. Это подтверждает ограниченную полезность, не универсальное превосходство или безопасность.

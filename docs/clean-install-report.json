@@ -1,0 +1,221 @@
+{
+  "passed": true,
+  "archive": "VentObserve-improved.zip",
+  "sha256": "fd61715a584199fbae8cfaafd26e8601c1393763a873a50c8e3b91a073096a8a",
+  "checked_utc": "2026-10-25T18:29:39.861119+00:00",
+  "environment": "Docker Desktop Linux x86_64; Engine 28.5.1; Windows host; not a separate Ubuntu judge VM",
+  "docker_resources": {
+    "cpu": 28,
+    "memory_gib": 31.26
+  },
+  "cached_base_images": true,
+  "build_layer_cache_permitted": true,
+  "extracted_from_final_zip": true,
+  "manifest_files_verified": 1038,
+  "fresh_volume_count_before": 0,
+  "new_volumes": [
+    "ventobserve-clean-20261025-232648_grafana-data",
+    "ventobserve-clean-20261025-232648_grafana-plugins",
+    "ventobserve-clean-20261025-232648_influxdb-config",
+    "ventobserve-clean-20261025-232648_influxdb-data",
+    "ventobserve-clean-20261025-232648_mongodb-data",
+    "ventobserve-clean-20261025-232648_mosquitto-data"
+  ],
+  "fresh_credentials": true,
+  "extended_api_downloaded_from_pinned_source": true,
+  "linux_tests": {
+    "passed": 76,
+    "network": "isolated container loopback only"
+  },
+  "launcher": "python integration/start-platform.py",
+  "launcher_exit_code": 0,
+  "launcher_seconds": 47.2,
+  "changes": "Metric spatial catalog, expanded policy audit and UI; required nested Grafana plugin ZIPs retained.",
+  "earlier_archive_sha256": "b1796e018125fbec4cd6a501e2edbceecf9ea4e9bdb58c4f2ebf11a73c59ee5b",
+  "live_reports": {
+    "platform-check.json": {
+      "passed": true,
+      "checked_at_unix": 1792952890.1465292,
+      "model": "gucheng-network-v3",
+      "source": "live MQTT -> Ditto -> UI API",
+      "checks": [
+        "28 typed Things read directly from Ditto with matching experiment, revision, state",
+        "Resistance command propagated through MQTT, Ditto children and UI API",
+        "Closed connection verified as zero-flow Thing",
+        "Delayed repair completed and measurement returned through Ditto",
+        "Scenario cancellation observed through platform"
+      ]
+    },
+    "ui-platform-check.json": {
+      "passed": true,
+      "checked_at_unix": 1792952956.7255778,
+      "checks": [
+        "Scenario fan: command receipt and Ditto state verified",
+        "Scenario resistance: command receipt and Ditto state verified",
+        "Scenario closure: command receipt and Ditto state verified",
+        "Scenario gas: command receipt and Ditto state verified",
+        "Scenario loss: command receipt and Ditto state verified",
+        "Scenario blind_all: command receipt and Ditto state verified",
+        "Scenario delay: command receipt and Ditto state verified",
+        "Scenario freeze: command receipt and Ditto state verified",
+        "Scenario bias: command receipt and Ditto state verified",
+        "Scenario noise: command receipt and Ditto state verified",
+        "Scenario outside: command receipt and Ditto state verified",
+        "Scenario cancel: command receipt and Ditto state verified",
+        "JSON replay in platform mode: truth, parameters, pause and receipt verified through Ditto"
+      ]
+    },
+    "dashboard-check.json": {
+      "checked_at_unix": 1792952890.348276,
+      "panels": [
+        {
+          "panel": "Methane V7 (%)",
+          "points": 2,
+          "latest": "0.23128229377519152",
+          "latest_age_s": 0.332816
+        },
+        {
+          "panel": "Methane V9 (%)",
+          "points": 2,
+          "latest": "0.16554289008289894",
+          "latest_age_s": 0.337484
+        },
+        {
+          "panel": "Flow e6 (m3/s)",
+          "points": 2,
+          "latest": "297.73491934361573",
+          "latest_age_s": 0.343133
+        },
+        {
+          "panel": "Forecast envelope width (percentage points)",
+          "points": 2,
+          "latest": "0.42849153025372666",
+          "latest_age_s": 0.348275
+        }
+      ],
+      "passed": true
+    },
+    "live-sensor-comparison.json": {
+      "passed": true,
+      "checked_at_unix": 1792952971.5773146,
+      "model_signature": "98ac940c96d3be5c9045f5b68ddb3a1b39c685d86fb32387043f5ea9dea3c460",
+      "scenario": "Nominal known initial gas; all channels lost; declared gas x2; horizon 600 s; same paused replay for each arm",
+      "experiment": {
+        "schema_version": 3,
+        "model_signature": "98ac940c96d3be5c9045f5b68ddb3a1b39c685d86fb32387043f5ea9dea3c460",
+        "seed": 20261026,
+        "timeline": [
+          {
+            "kind": "command",
+            "data": {
+              "action": "pause"
+            }
+          },
+          {
+            "kind": "command",
+            "data": {
+              "action": "scenario",
+              "name": "blind_all"
+            }
+          },
+          {
+            "kind": "command",
+            "data": {
+              "action": "scenario",
+              "name": "gas"
+            }
+          },
+          {
+            "kind": "command",
+            "data": {
+              "action": "horizon",
+              "value": 600
+            }
+          },
+          {
+            "kind": "command",
+            "data": {
+              "action": "speed",
+              "value": 10
+            }
+          }
+        ]
+      },
+      "experiment_sha256": "71836789578aaf9a78026d3d36dc2badca98f15bd50535e79a91301ac66b5440",
+      "results": {
+        "proposed": {
+          "sensor": "q_e2",
+          "source": "Ditto",
+          "experiment_id": "624743e084e74ac0bb285ae355ac877b",
+          "before_width": 1.59127277770568,
+          "decision": {
+            "sensor": "q_e2",
+            "before_width": 1.59127277770568,
+            "time": 0.0,
+            "target_time": 600.0,
+            "expected_gain": 0.08175346878102263,
+            "repair_due": 10.0,
+            "note": "Repair scheduled in simulation time; observed forecast widths logged in history.",
+            "completed": true,
+            "completed_at": 10.0,
+            "after_width_same_target": 1.4924711736236311,
+            "actual_gain": 0.09880160408204897
+          },
+          "cost": 1.0,
+          "gain_per_cost": 0.09880160408204897
+        },
+        "simple": {
+          "sensor": "q_e6",
+          "source": "Ditto",
+          "experiment_id": "2fe8662359654ae08e105e70f3dd4290",
+          "before_width": 1.59127277770568,
+          "decision": {
+            "sensor": "q_e6",
+            "before_width": 1.59127277770568,
+            "time": 0.0,
+            "target_time": 600.0,
+            "expected_gain": 0.08175346878102263,
+            "repair_due": 10.0,
+            "note": "Repair scheduled in simulation time; observed forecast widths logged in history.",
+            "completed": true,
+            "completed_at": 10.0,
+            "after_width_same_target": 1.4924711736236311,
+            "actual_gain": 0.09880160408204897
+          },
+          "cost": 1.0,
+          "gain_per_cost": 0.09880160408204897
+        },
+        "methane_priority": {
+          "sensor": "c_V9",
+          "source": "Ditto",
+          "experiment_id": "2f9dcab0cc484091a620282ce29318b7",
+          "before_width": 1.59127277770568,
+          "decision": {
+            "sensor": "c_V9",
+            "before_width": 1.59127277770568,
+            "time": 0.0,
+            "target_time": 600.0,
+            "expected_gain": 4.440892098500626e-16,
+            "repair_due": 30.0,
+            "note": "Repair scheduled in simulation time; observed forecast widths logged in history.",
+            "completed": true,
+            "completed_at": 30.0,
+            "after_width_same_target": 1.59127277770568,
+            "actual_gain": 0.0
+          },
+          "cost": 2.0,
+          "gain_per_cost": 0.0
+        }
+      },
+      "spatial_objects_verified": 28,
+      "utility_report_cases": 6048,
+      "limitation": "One engineering demonstration, not an independent validation or a representative estimate of policy superiority."
+    }
+  },
+  "limitations": [
+    "Cached Docker images/layers retained",
+    "Not tested with exact judge 8 CPU/16GB/Ubuntu environment",
+    "No official repository submission performed"
+  ],
+  "original_demo_restored": true
+}

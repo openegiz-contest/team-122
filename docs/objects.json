@@ -1,0 +1,930 @@
+{
+  "site": {
+    "id": "site",
+    "kind": "ventilation-system",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "license": "CC BY 4.0",
+    "description": "Equivalent Gucheng air network with synthetic dilute methane",
+    "links": [
+      "e1",
+      "e2",
+      "e3",
+      "e4",
+      "e5",
+      "e6",
+      "e7",
+      "e8",
+      "e9"
+    ],
+    "spatial": {
+      "crs": "local engineering XYZ, metres; no geographic registration",
+      "origin": "synthetic orthogonal realization of the published equivalent network",
+      "surveyed": false,
+      "coordinate_units": "m",
+      "assumed_depth_m": 500,
+      "assumptions": [
+        "Exterior nodes are placed on z=0; internal nodes on z=-500 m.",
+        "500 m boundary branches are represented as vertical shafts by design, not source identification.",
+        "This is one length-preserving realization, not reconstruction of actual headings.",
+        "Square section shape inferred from area; actual shape is unknown.",
+        "No natural ventilation head is added; hydraulic assumptions are unchanged."
+      ],
+      "bounds_m": {
+        "x": [
+          -2000,
+          8000
+        ],
+        "y": [
+          0,
+          3910
+        ],
+        "z": [
+          -500,
+          0
+        ]
+      },
+      "source_dimensions": [
+        "branch length",
+        "cross-sectional area"
+      ],
+      "synthetic_dimensions": [
+        "XYZ coordinates",
+        "orientation",
+        "depth",
+        "section shape"
+      ]
+    }
+  },
+  "V2": {
+    "id": "V2",
+    "kind": "mixing-node",
+    "volume_m3": 57082.49999999999,
+    "gas_source_m3_s": 0.0,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e1",
+      "e2"
+    ],
+    "spatial": {
+      "xyz_m": [
+        0,
+        0,
+        -500
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V4": {
+    "id": "V4",
+    "kind": "mixing-node",
+    "volume_m3": 86802.5,
+    "gas_source_m3_s": 0.0,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e3",
+      "e4"
+    ],
+    "spatial": {
+      "xyz_m": [
+        -2000,
+        3910,
+        -500
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V5": {
+    "id": "V5",
+    "kind": "mixing-node",
+    "volume_m3": 177196.9,
+    "gas_source_m3_s": 0.5,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e2",
+      "e5",
+      "e6"
+    ],
+    "spatial": {
+      "xyz_m": [
+        3000,
+        0,
+        -500
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V6": {
+    "id": "V6",
+    "kind": "mixing-node",
+    "volume_m3": 184136.9,
+    "gas_source_m3_s": 0.35,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e4",
+      "e5",
+      "e7"
+    ],
+    "spatial": {
+      "xyz_m": [
+        3000,
+        3910,
+        -500
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V7": {
+    "id": "V7",
+    "kind": "mixing-node",
+    "volume_m3": 89550.0,
+    "gas_source_m3_s": 0.3,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e6",
+      "e8"
+    ],
+    "spatial": {
+      "xyz_m": [
+        8000,
+        0,
+        -500
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V9": {
+    "id": "V9",
+    "kind": "mixing-node",
+    "volume_m3": 65620.0,
+    "gas_source_m3_s": 0.2,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e7",
+      "e9"
+    ],
+    "spatial": {
+      "xyz_m": [
+        6000,
+        3910,
+        -500
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V1": {
+    "id": "V1",
+    "kind": "boundary",
+    "volume_m3": 0,
+    "gas_source_m3_s": 0,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e1"
+    ],
+    "spatial": {
+      "xyz_m": [
+        0,
+        0,
+        0
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V3": {
+    "id": "V3",
+    "kind": "boundary",
+    "volume_m3": 0,
+    "gas_source_m3_s": 0,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e3"
+    ],
+    "spatial": {
+      "xyz_m": [
+        -2000,
+        3910,
+        0
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V8": {
+    "id": "V8",
+    "kind": "boundary",
+    "volume_m3": 0,
+    "gas_source_m3_s": 0,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e8"
+    ],
+    "spatial": {
+      "xyz_m": [
+        8000,
+        0,
+        0
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "V10": {
+    "id": "V10",
+    "kind": "boundary",
+    "volume_m3": 0,
+    "gas_source_m3_s": 0,
+    "units": {
+      "volume_m3": "m³",
+      "gas_source_m3_s": "m³ CH4/s",
+      "pressure": "Pa",
+      "methane": "% vol"
+    },
+    "origin": {
+      "volume": "half incident published geometry; lumping assumption",
+      "gas": "synthetic scenario"
+    },
+    "links": [
+      "e9"
+    ],
+    "spatial": {
+      "xyz_m": [
+        6000,
+        3910,
+        0
+      ],
+      "origin": "synthetic length-preserving layout",
+      "surveyed": false
+    }
+  },
+  "e1": {
+    "id": "e1",
+    "from": "V1",
+    "to": "V2",
+    "R": 0.00394,
+    "length": 500.0,
+    "area": 34.11,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V1",
+      "V2"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -500
+        ]
+      ],
+      "length_m": 500.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.840376700179536,
+      "volume_m3": 17055.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e2": {
+    "id": "e2",
+    "from": "V2",
+    "to": "V5",
+    "R": 0.00417,
+    "length": 3000.0,
+    "area": 32.37,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V2",
+      "V5"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          0,
+          0,
+          -500
+        ],
+        [
+          3000,
+          0,
+          -500
+        ]
+      ],
+      "length_m": 3000.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.68946394662977,
+      "volume_m3": 97109.99999999999,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e3": {
+    "id": "e3",
+    "from": "V3",
+    "to": "V4",
+    "R": 0.00702,
+    "length": 500.0,
+    "area": 29.51,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V3",
+      "V4"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          -2000,
+          3910,
+          0
+        ],
+        [
+          -2000,
+          3910,
+          -500
+        ]
+      ],
+      "length_m": 500.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.432310742216428,
+      "volume_m3": 14755.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e4": {
+    "id": "e4",
+    "from": "V4",
+    "to": "V6",
+    "R": 0.00431,
+    "length": 5000.0,
+    "area": 31.77,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V4",
+      "V6"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          -2000,
+          3910,
+          -500
+        ],
+        [
+          3000,
+          3910,
+          -500
+        ]
+      ],
+      "length_m": 5000.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.636488268416781,
+      "volume_m3": 158850.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e5": {
+    "id": "e5",
+    "from": "V5",
+    "to": "V6",
+    "R": 0.00651,
+    "length": 3910.0,
+    "area": 28.18,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V5",
+      "V6"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          3000,
+          0,
+          -500
+        ],
+        [
+          3000,
+          3910,
+          -500
+        ]
+      ],
+      "length_m": 3910.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.308483775994799,
+      "volume_m3": 110183.8,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e6": {
+    "id": "e6",
+    "from": "V5",
+    "to": "V7",
+    "R": 0.00744,
+    "length": 5000.0,
+    "area": 29.42,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V5",
+      "V7"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          3000,
+          0,
+          -500
+        ],
+        [
+          8000,
+          0,
+          -500
+        ]
+      ],
+      "length_m": 5000.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.424020648928247,
+      "volume_m3": 147100.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e7": {
+    "id": "e7",
+    "from": "V6",
+    "to": "V9",
+    "R": 0.00356,
+    "length": 3000.0,
+    "area": 33.08,
+    "kind": "airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V6",
+      "V9"
+    ],
+    "spatial": {
+      "centerline_m": [
+        [
+          3000,
+          3910,
+          -500
+        ],
+        [
+          6000,
+          3910,
+          -500
+        ]
+      ],
+      "length_m": 3000.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 5.751521537819362,
+      "volume_m3": 99240.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e8": {
+    "id": "e8",
+    "from": "V7",
+    "to": "V8",
+    "R": 0.00576,
+    "length": 500.0,
+    "area": 64.0,
+    "kind": "fan-airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V7",
+      "V8"
+    ],
+    "fan_curve": {
+      "coefficients": [
+        3255.2,
+        10.727,
+        -0.044
+      ],
+      "formula": "a*n^2+b*n*Q+c*Q^2",
+      "coefficient_units": [
+        "Pa",
+        "Pa s/m³",
+        "Pa s²/m⁶"
+      ],
+      "speed_range": [
+        0.5,
+        1.2
+      ],
+      "origin": "coefficients from source; speed scaling assumed",
+      "efficiency": 0.72,
+      "efficiency_origin": "synthetic assumption"
+    },
+    "spatial": {
+      "centerline_m": [
+        [
+          8000,
+          0,
+          -500
+        ],
+        [
+          8000,
+          0,
+          0
+        ]
+      ],
+      "length_m": 500.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 8.0,
+      "volume_m3": 32000.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "e9": {
+    "id": "e9",
+    "from": "V9",
+    "to": "V10",
+    "R": 0.00357,
+    "length": 500.0,
+    "area": 64.0,
+    "kind": "fan-airway",
+    "source": "https://doi.org/10.1371/journal.pone.0320326",
+    "units": {
+      "R": "Pa s²/m⁶",
+      "length": "m",
+      "area": "m²"
+    },
+    "links": [
+      "V9",
+      "V10"
+    ],
+    "fan_curve": {
+      "coefficients": [
+        3372.4,
+        9.703,
+        -0.033
+      ],
+      "formula": "a*n^2+b*n*Q+c*Q^2",
+      "coefficient_units": [
+        "Pa",
+        "Pa s/m³",
+        "Pa s²/m⁶"
+      ],
+      "speed_range": [
+        0.5,
+        1.2
+      ],
+      "origin": "coefficients from source; speed scaling assumed",
+      "efficiency": 0.72,
+      "efficiency_origin": "synthetic assumption"
+    },
+    "spatial": {
+      "centerline_m": [
+        [
+          6000,
+          3910,
+          -500
+        ],
+        [
+          6000,
+          3910,
+          0
+        ]
+      ],
+      "length_m": 500.0,
+      "length_error_m": 0.0,
+      "square_section_side_m": 8.0,
+      "volume_m3": 32000.0,
+      "coordinate_origin": "synthetic",
+      "length_area_origin": "published table 4",
+      "surveyed": false
+    }
+  },
+  "sensor-q_e2": {
+    "id": "sensor-q_e2",
+    "kind": "sensor",
+    "name": "Расход e2",
+    "unit": "м³/с",
+    "tolerance": 3.0,
+    "cost": 1.0,
+    "repair_s": 10.0,
+    "target": "e2",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "e2"
+    ],
+    "spatial": {
+      "xyz_m": [
+        1500.0,
+        0.0,
+        -500.0
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-q_e5": {
+    "id": "sensor-q_e5",
+    "kind": "sensor",
+    "name": "Расход e5",
+    "unit": "м³/с",
+    "tolerance": 3.0,
+    "cost": 1.0,
+    "repair_s": 10.0,
+    "target": "e5",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "e5"
+    ],
+    "spatial": {
+      "xyz_m": [
+        3000.0,
+        1955.0,
+        -500.0
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-q_e6": {
+    "id": "sensor-q_e6",
+    "kind": "sensor",
+    "name": "Расход e6",
+    "unit": "м³/с",
+    "tolerance": 3.0,
+    "cost": 1.0,
+    "repair_s": 10.0,
+    "target": "e6",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "e6"
+    ],
+    "spatial": {
+      "xyz_m": [
+        5500.0,
+        0.0,
+        -500.0
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-q_e7": {
+    "id": "sensor-q_e7",
+    "kind": "sensor",
+    "name": "Расход e7",
+    "unit": "м³/с",
+    "tolerance": 3.0,
+    "cost": 1.0,
+    "repair_s": 10.0,
+    "target": "e7",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "e7"
+    ],
+    "spatial": {
+      "xyz_m": [
+        4500.0,
+        3910.0,
+        -500.0
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-c_V5": {
+    "id": "sensor-c_V5",
+    "kind": "sensor",
+    "name": "Метан V5",
+    "unit": "% об.",
+    "tolerance": 0.02,
+    "cost": 2.0,
+    "repair_s": 30.0,
+    "target": "V5",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "V5"
+    ],
+    "spatial": {
+      "xyz_m": [
+        3000,
+        0,
+        -500
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-c_V6": {
+    "id": "sensor-c_V6",
+    "kind": "sensor",
+    "name": "Метан V6",
+    "unit": "% об.",
+    "tolerance": 0.02,
+    "cost": 2.0,
+    "repair_s": 30.0,
+    "target": "V6",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "V6"
+    ],
+    "spatial": {
+      "xyz_m": [
+        3000,
+        3910,
+        -500
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-c_V7": {
+    "id": "sensor-c_V7",
+    "kind": "sensor",
+    "name": "Метан V7",
+    "unit": "% об.",
+    "tolerance": 0.02,
+    "cost": 2.0,
+    "repair_s": 30.0,
+    "target": "V7",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "V7"
+    ],
+    "spatial": {
+      "xyz_m": [
+        8000,
+        0,
+        -500
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  },
+  "sensor-c_V9": {
+    "id": "sensor-c_V9",
+    "kind": "sensor",
+    "name": "Метан V9",
+    "unit": "% об.",
+    "tolerance": 0.02,
+    "cost": 2.0,
+    "repair_s": 30.0,
+    "target": "V9",
+    "origin": "synthetic tolerance/cost/repair time",
+    "links": [
+      "V9"
+    ],
+    "spatial": {
+      "xyz_m": [
+        6000,
+        3910,
+        -500
+      ],
+      "origin": "target node or branch midpoint; synthetic mounting position",
+      "surveyed": false
+    }
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "experiment": "16 synthetic in-library parameter combinations; all sensors failed; first repair after 120s",
+  "metric": "Observed reduction of A+B methane envelope width (percentage points) / abstract cost",
+  "limitations": [
+    "No random sensor noise or out-of-library faults",
+    "Uniform finite hypothesis weights",
+    "No crew travel or repair durations",
+    "Not an industrial safety validation"
+  ],
+  "cases": 16,
+  "mean_selected": 0.5454295516093203,
+  "mean_random": 0.4427302756044203,
+  "mean_static_ca": 0.5454295516093203,
+  "mean_oracle": 0.7743172688253461,
+  "records": [
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5334911844329832,
+      "uniform_random_expected_gain_per_cost": 0.5637909024281766,
+      "static_methane_A_gain_per_cost": 0.5334911844329832,
+      "oracle_best_gain_per_cost": 1.2239541328493053,
+      "all_effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376927,
+        "ca": 0.5334911844329832,
+        "cb": 0.3310122269458877,
+        "qt": 1.2239541328493053
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5334911844329832,
+      "uniform_random_expected_gain_per_cost": 0.5670255164945817,
+      "static_methane_A_gain_per_cost": 0.5334911844329832,
+      "oracle_best_gain_per_cost": 1.2239541328493053,
+      "all_effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376927,
+        "ca": 0.5334911844329832,
+        "cb": 0.3471852972779132,
+        "qt": 1.2239541328493053
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5198687783003115,
+      "uniform_random_expected_gain_per_cost": 0.5610664212016423,
+      "static_methane_A_gain_per_cost": 0.5198687783003115,
+      "oracle_best_gain_per_cost": 1.2239541328493053,
+      "all_effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376927,
+        "ca": 0.5198687783003115,
+        "cb": 0.3310122269458877,
+        "qt": 1.2239541328493053
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5198687783003115,
+      "uniform_random_expected_gain_per_cost": 0.5643010352680474,
+      "static_methane_A_gain_per_cost": 0.5198687783003115,
+      "oracle_best_gain_per_cost": 1.2239541328493053,
+      "all_effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376927,
+        "ca": 0.5198687783003115,
+        "cb": 0.3471852972779132,
+        "qt": 1.2239541328493053
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5450370596880493,
+      "uniform_random_expected_gain_per_cost": 0.38742567844373377,
+      "static_methane_A_gain_per_cost": 0.5450370596880493,
+      "oracle_best_gain_per_cost": 0.5450370596880493,
+      "all_effects": {
+        "qa": 0.5436386960109287,
+        "qb": 0.5436386960109287,
+        "ca": 0.5450370596880493,
+        "cb": 0.3048139405087622,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5450370596880493,
+      "uniform_random_expected_gain_per_cost": 0.43075345460825226,
+      "static_methane_A_gain_per_cost": 0.5450370596880493,
+      "oracle_best_gain_per_cost": 0.5450370596880493,
+      "all_effects": {
+        "qa": 0.5436386960109287,
+        "qb": 0.5436386960109287,
+        "ca": 0.5450370596880493,
+        "cb": 0.5214528213313546,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5078370690301904,
+      "uniform_random_expected_gain_per_cost": 0.379985680312162,
+      "static_methane_A_gain_per_cost": 0.5078370690301904,
+      "oracle_best_gain_per_cost": 0.5436386960109287,
+      "all_effects": {
+        "qa": 0.5436386960109287,
+        "qb": 0.5436386960109287,
+        "ca": 0.5078370690301904,
+        "cb": 0.3048139405087622,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5078370690301904,
+      "uniform_random_expected_gain_per_cost": 0.4233134564766805,
+      "static_methane_A_gain_per_cost": 0.5078370690301904,
+      "oracle_best_gain_per_cost": 0.5436386960109287,
+      "all_effects": {
+        "qa": 0.5436386960109287,
+        "qb": 0.5436386960109287,
+        "ca": 0.5078370690301904,
+        "cb": 0.5214528213313546,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5033617017451409,
+      "uniform_random_expected_gain_per_cost": 0.33802816197078833,
+      "static_methane_A_gain_per_cost": 0.5033617017451409,
+      "oracle_best_gain_per_cost": 0.5033617017451409,
+      "all_effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.5033617017451409,
+        "cb": 0.353909465385363,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5033617017451409,
+      "uniform_random_expected_gain_per_cost": 0.3277581334586202,
+      "static_methane_A_gain_per_cost": 0.5033617017451409,
+      "oracle_best_gain_per_cost": 0.5033617017451409,
+      "all_effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.5033617017451409,
+        "cb": 0.3025593228245225,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.6880199008126681,
+      "uniform_random_expected_gain_per_cost": 0.3749598017842937,
+      "static_methane_A_gain_per_cost": 0.6880199008126681,
+      "oracle_best_gain_per_cost": 0.6880199008126681,
+      "all_effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.6880199008126681,
+        "cb": 0.353909465385363,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.6880199008126681,
+      "uniform_random_expected_gain_per_cost": 0.36468977327212565,
+      "static_methane_A_gain_per_cost": 0.6880199008126681,
+      "oracle_best_gain_per_cost": 0.6880199008126681,
+      "all_effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.6880199008126681,
+        "cb": 0.3025593228245225,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.4954744993150267,
+      "uniform_random_expected_gain_per_cost": 0.4331604457705369,
+      "static_methane_A_gain_per_cost": 0.4954744993150267,
+      "oracle_best_gain_per_cost": 0.7332862633236856,
+      "all_effects": {
+        "qa": 0.3666431316618428,
+        "qb": 0.2663720329794719,
+        "ca": 0.4954744993150267,
+        "cb": 0.3040263015726576,
+        "qt": 0.7332862633236856
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.4954744993150267,
+      "uniform_random_expected_gain_per_cost": 0.45215840715824024,
+      "static_methane_A_gain_per_cost": 0.4954744993150267,
+      "oracle_best_gain_per_cost": 0.7332862633236856,
+      "all_effects": {
+        "qa": 0.3666431316618428,
+        "qb": 0.2663720329794719,
+        "ca": 0.4954744993150267,
+        "cb": 0.39901610851117425,
+        "qt": 0.7332862633236856
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5703462195501922,
+      "uniform_random_expected_gain_per_cost": 0.44813478981757,
+      "static_methane_A_gain_per_cost": 0.5703462195501922,
+      "oracle_best_gain_per_cost": 0.7332862633236856,
+      "all_effects": {
+        "qa": 0.3666431316618428,
+        "qb": 0.2663720329794719,
+        "ca": 0.5703462195501922,
+        "cb": 0.3040263015726576,
+        "qt": 0.7332862633236856
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1.0,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "chosen": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected_gain_per_cost": 0.5703462195501922,
+      "uniform_random_expected_gain_per_cost": 0.46713275120527337,
+      "static_methane_A_gain_per_cost": 0.5703462195501922,
+      "oracle_best_gain_per_cost": 0.7332862633236856,
+      "all_effects": {
+        "qa": 0.3666431316618428,
+        "qb": 0.2663720329794719,
+        "ca": 0.5703462195501922,
+        "cb": 0.39901610851117425,
+        "qt": 0.7332862633236856
+      }
+    }
+  ]
+}

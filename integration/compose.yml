@@ -1,0 +1,39 @@
+# Overlay: first compose file must be OpenEgiz deploy/compose/docker-compose.yml.
+services:
+  extended-api:
+    build:
+      # Same upstream pinned commit, vendored to avoid remote Git build stalls.
+      context: ${VENTOBSERVE_DIR}/integration/vendor/extended-api
+  ventobserve:
+    build:
+      context: ${VENTOBSERVE_DIR:?set absolute prototype directory}
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    mem_limit: 256m
+    environment:
+      VENT_MODE: platform
+      DITTO_URL: http://ditto-nginx:80
+      DITTO_USER: ditto
+      DITTO_PASSWORD: ${DITTO_PASSWORD:?start OpenEgiz first}
+      MQTT_HOST: mosquitto
+      MQTT_PORT: "1883"
+    ports:
+      - "127.0.0.1:8765:8765"
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,time,urllib.request; s=json.load(urllib.request.urlopen('http://127.0.0.1:8765/api/state',timeout=5)); assert s['connection']['source']=='Ditto' and time.time()-s['wall_time']<15"]
+      interval: 10s
+      timeout: 8s
+      retries: 12
+      start_period: 60s
+  grafana:
+    volumes:
+      - ${VENTOBSERVE_DIR}/integration/dashboard.json:/var/lib/grafana/example-dashboards/ventobserve.json:ro
+
+  telegraf:
+    environment:
+      DITTO_PASSWORD: ${DITTO_PASSWORD}
+    volumes:
+      - ${VENTOBSERVE_DIR}/integration/telegraf.conf:/etc/telegraf/telegraf.conf:ro

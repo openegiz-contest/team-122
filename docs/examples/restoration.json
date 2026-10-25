@@ -1,0 +1,44 @@
+{
+  "experiment": {
+    "schema_version": 2,
+    "model_version": "bounded-interval-v2",
+    "model_signature": "1c5dc65b85e114bc2693da4b36b83b1bedc7c3508e9062f7efe0dd4bf6527d9d",
+    "seed": 20261025,
+    "timeline": [
+      {
+        "kind": "step",
+        "dt": 60
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "checkpoint"
+        }
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "scenario",
+          "name": "blind_a"
+        }
+      },
+      {
+        "kind": "step",
+        "dt": 120
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "restore",
+          "sensor": "ca"
+        }
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "pause"
+        }
+      }
+    ]
+  }
+}

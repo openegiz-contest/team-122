@@ -1,0 +1,7327 @@
+{
+  "experiment": "Balanced 16 parameter cases x 4 sensor masks x 2 fan regimes x 2 times",
+  "cases": 256,
+  "metric": "CH4 envelope reduction in percentage points / abstract cost",
+  "mean": {
+    "selected": 0.3232146843202143,
+    "fixed_priority": 0.3228753564287439,
+    "random_expected": 0.20997166542767529,
+    "oracle": 0.3541012754381605
+  },
+  "worst": {
+    "selected": 0.06693439640220795,
+    "fixed_priority": 0.06693439640220795,
+    "random_expected": 0.03346719820110398,
+    "oracle": 0.06693439640220795
+  },
+  "selected_vs_fixed": {
+    "better": 4,
+    "equal": 252,
+    "worse": 0
+  },
+  "observer_max_ms": 4.355199984274805,
+  "limitations": [
+    "Synthetic, deterministic, in-library cases only",
+    "No probabilities or field benefit established",
+    "Static priority CA, CB, QA, QB, QT restricted to unavailable sensors",
+    "Timing depends on hardware"
+  ],
+  "records": [
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6850862462761949,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.09663537582812314,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5709999823011458,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.19327075165624627
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.966506170584146,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.16108436176402433,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.5802999949082732,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.32216872352804865
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7766133969026136,
+      "selected": 0.22055051950905058,
+      "fixed_priority": 0.22055051950905058,
+      "random_expected": 0.11027525975452529,
+      "oracle": 0.22055051950905058,
+      "observer_ms": 0.603299995418638,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22055051950905058
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.365593893918708,
+      "selected": 0.45519796463956935,
+      "fixed_priority": 0.45519796463956935,
+      "random_expected": 0.22759898231978468,
+      "oracle": 0.45519796463956935,
+      "observer_ms": 0.5512000061571598,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.45519796463956935
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.31542773982666045,
+      "selected": 0.07005124950640147,
+      "fixed_priority": 0.07005124950640147,
+      "random_expected": 0.035025624753200736,
+      "oracle": 0.07005124950640147,
+      "observer_ms": 0.5520999839063734,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07005124950640147
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.6625109717749238,
+      "selected": 0.22083699059164127,
+      "fixed_priority": 0.22083699059164127,
+      "random_expected": 0.11041849529582064,
+      "oracle": 0.22083699059164127,
+      "observer_ms": 0.609799986705184,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.34443998918337404,
+      "selected": 0.07649271693597075,
+      "fixed_priority": 0.07649271693597075,
+      "random_expected": 0.038246358467985374,
+      "oracle": 0.07649271693597075,
+      "observer_ms": 0.5689999961759895,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07649271693597075
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8689597246416814,
+      "selected": 0.2896532415472271,
+      "fixed_priority": 0.2896532415472271,
+      "random_expected": 0.14482662077361355,
+      "oracle": 0.2896532415472271,
+      "observer_ms": 0.6168000109028071,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.2896532415472271
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8952399947953993,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.13166100058132388,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.619999977061525,
+      "effects": {
+        "ca": 0.19327075165624627,
+        "cb": 0.07005124950640147
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.6290171423590698,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.27150285705984495,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.5806999979540706,
+      "effects": {
+        "ca": 0.32216872352804865,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.006091547710526,
+      "selected": 0.2205505195090506,
+      "fixed_priority": 0.2205505195090506,
+      "random_expected": 0.1485216182225107,
+      "oracle": 0.2205505195090506,
+      "observer_ms": 0.6013000092934817,
+      "effects": {
+        "ca": 0.2205505195090506,
+        "cb": 0.07649271693597078
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.2345536185603896,
+      "selected": 0.4551979646395694,
+      "fixed_priority": 0.4551979646395694,
+      "random_expected": 0.37242560309339834,
+      "oracle": 0.4551979646395694,
+      "observer_ms": 0.5775000026915222,
+      "effects": {
+        "ca": 0.4551979646395694,
+        "cb": 0.2896532415472272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.24323309210092758,
+      "fixed_priority": 0.24323309210092758,
+      "random_expected": 0.2211590496123127,
+      "oracle": 0.4619943250906513,
+      "observer_ms": 3.8440999924205244,
+      "effects": {
+        "qa": 0.17447015613709138,
+        "qb": 0.11722630844060422,
+        "ca": 0.24323309210092758,
+        "cb": 0.10887136629228904,
+        "qt": 0.4619943250906513
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5334911844329832,
+      "fixed_priority": 0.5334911844329832,
+      "random_expected": 0.5637909024281768,
+      "oracle": 1.2239541328493055,
+      "observer_ms": 3.215499978978187,
+      "effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376929,
+        "ca": 0.5334911844329832,
+        "cb": 0.3310122269458877,
+        "qt": 1.2239541328493055
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.2517678362193409,
+      "fixed_priority": 0.2517678362193409,
+      "random_expected": 0.18016238755849331,
+      "oracle": 0.3149326396590526,
+      "observer_ms": 3.8997000083327293,
+      "effects": {
+        "qa": 0.13964990013482992,
+        "qb": 0.0867939687647511,
+        "ca": 0.2517678362193409,
+        "cb": 0.10766759301449207,
+        "qt": 0.3149326396590526
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.6946392567305325,
+      "fixed_priority": 0.6946392567305325,
+      "random_expected": 0.6083512456937702,
+      "oracle": 1.168879177834134,
+      "observer_ms": 3.076099994359538,
+      "effects": {
+        "qa": 0.4799607734983715,
+        "qb": 0.2982613456246317,
+        "ca": 0.6946392567305325,
+        "cb": 0.4000156747811814,
+        "qt": 1.168879177834134
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.5798122549687388,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.09663537582812314,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5716999876312912,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.19327075165624627
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.966506170584146,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.16108436176402433,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.5824000108987093,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.32216872352804865
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6616515585271517,
+      "selected": 0.22055051950905058,
+      "fixed_priority": 0.22055051950905058,
+      "random_expected": 0.11027525975452529,
+      "oracle": 0.22055051950905058,
+      "observer_ms": 0.5704000068362802,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22055051950905058
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.365593893918708,
+      "selected": 0.45519796463956935,
+      "fixed_priority": 0.45519796463956935,
+      "random_expected": 0.22759898231978468,
+      "oracle": 0.45519796463956935,
+      "observer_ms": 0.5767999973613769,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.45519796463956935
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.31542773982666045,
+      "selected": 0.10514257994222015,
+      "fixed_priority": 0.10514257994222015,
+      "random_expected": 0.052571289971110075,
+      "oracle": 0.10514257994222015,
+      "observer_ms": 0.5754000158049166,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.10514257994222015
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.6625109717749238,
+      "selected": 0.22083699059164127,
+      "fixed_priority": 0.22083699059164127,
+      "random_expected": 0.11041849529582064,
+      "oracle": 0.22083699059164127,
+      "observer_ms": 0.5607999919448048,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.34443998918337404,
+      "selected": 0.11481332972779135,
+      "fixed_priority": 0.11481332972779135,
+      "random_expected": 0.05740666486389567,
+      "oracle": 0.11481332972779135,
+      "observer_ms": 0.6283999828156084,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.11481332972779135
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8689597246416814,
+      "selected": 0.2896532415472271,
+      "fixed_priority": 0.2896532415472271,
+      "random_expected": 0.14482662077361355,
+      "oracle": 0.2896532415472271,
+      "observer_ms": 0.5501999985426664,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.2896532415472271
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8952399947953993,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.14920666579923322,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5805999971926212,
+      "effects": {
+        "ca": 0.19327075165624627,
+        "cb": 0.10514257994222016
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.6290171423590698,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.27150285705984495,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.5804999964311719,
+      "effects": {
+        "ca": 0.32216872352804865,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.006091547710526,
+      "selected": 0.2205505195090506,
+      "fixed_priority": 0.2205505195090506,
+      "random_expected": 0.167681924618421,
+      "oracle": 0.2205505195090506,
+      "observer_ms": 0.6342999986372888,
+      "effects": {
+        "ca": 0.2205505195090506,
+        "cb": 0.11481332972779139
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.2345536185603896,
+      "selected": 0.4551979646395694,
+      "fixed_priority": 0.4551979646395694,
+      "random_expected": 0.37242560309339834,
+      "oracle": 0.4551979646395694,
+      "observer_ms": 0.5816000048071146,
+      "effects": {
+        "ca": 0.4551979646395694,
+        "cb": 0.2896532415472272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.24323309210092758,
+      "fixed_priority": 0.24323309210092758,
+      "random_expected": 0.21580892045238756,
+      "oracle": 0.4619943250906513,
+      "observer_ms": 4.355199984274805,
+      "effects": {
+        "qa": 0.17447015613709138,
+        "qb": 0.11722630844060422,
+        "ca": 0.24323309210092758,
+        "cb": 0.08212072049266335,
+        "qt": 0.4619943250906513
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5334911844329832,
+      "fixed_priority": 0.5334911844329832,
+      "random_expected": 0.5670255164945818,
+      "oracle": 1.2239541328493055,
+      "observer_ms": 3.0728999990969896,
+      "effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376929,
+        "ca": 0.5334911844329832,
+        "cb": 0.3471852972779131,
+        "qt": 1.2239541328493055
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.2517678362193409,
+      "fixed_priority": 0.2517678362193409,
+      "random_expected": 0.17585011801910394,
+      "oracle": 0.3149326396590526,
+      "observer_ms": 3.9213999989442527,
+      "effects": {
+        "qa": 0.13964990013482992,
+        "qb": 0.0867939687647511,
+        "ca": 0.2517678362193409,
+        "cb": 0.08610624531754518,
+        "qt": 0.3149326396590526
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.6946392567305325,
+      "fixed_priority": 0.6946392567305325,
+      "random_expected": 0.6108632939951298,
+      "oracle": 1.168879177834134,
+      "observer_ms": 3.0439999827649444,
+      "effects": {
+        "qa": 0.4799607734983715,
+        "qb": 0.2982613456246317,
+        "ca": 0.6946392567305325,
+        "cb": 0.4125759162879796,
+        "qt": 1.168879177834134
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6850862462761949,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.09663537582812314,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5761999927926809,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.19327075165624627
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.966506170584146,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.16108436176402433,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.5761999927926809,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.32216872352804865
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7766133969026136,
+      "selected": 0.22055051950905058,
+      "fixed_priority": 0.22055051950905058,
+      "random_expected": 0.11027525975452529,
+      "oracle": 0.22055051950905058,
+      "observer_ms": 0.5788999842479825,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22055051950905058
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.365593893918708,
+      "selected": 0.45519796463956935,
+      "fixed_priority": 0.45519796463956935,
+      "random_expected": 0.22759898231978468,
+      "oracle": 0.45519796463956935,
+      "observer_ms": 0.5609999934677035,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.45519796463956935
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.31542773982666045,
+      "selected": 0.07005124950640147,
+      "fixed_priority": 0.07005124950640147,
+      "random_expected": 0.035025624753200736,
+      "oracle": 0.07005124950640147,
+      "observer_ms": 0.7333999965339899,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07005124950640147
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.6625109717749238,
+      "selected": 0.22083699059164127,
+      "fixed_priority": 0.22083699059164127,
+      "random_expected": 0.11041849529582064,
+      "oracle": 0.22083699059164127,
+      "observer_ms": 0.5577999982051551,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.34443998918337404,
+      "selected": 0.07649271693597075,
+      "fixed_priority": 0.07649271693597075,
+      "random_expected": 0.038246358467985374,
+      "oracle": 0.07649271693597075,
+      "observer_ms": 0.5688999954145402,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07649271693597075
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8689597246416814,
+      "selected": 0.2896532415472271,
+      "fixed_priority": 0.2896532415472271,
+      "random_expected": 0.14482662077361355,
+      "oracle": 0.2896532415472271,
+      "observer_ms": 0.5738999752793461,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.2896532415472271
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8952399947953993,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.13166100058132388,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5812000017613173,
+      "effects": {
+        "ca": 0.19327075165624627,
+        "cb": 0.07005124950640147
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.6290171423590698,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.27150285705984495,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.6317000079434365,
+      "effects": {
+        "ca": 0.32216872352804865,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.006091547710526,
+      "selected": 0.2205505195090506,
+      "fixed_priority": 0.2205505195090506,
+      "random_expected": 0.1485216182225107,
+      "oracle": 0.2205505195090506,
+      "observer_ms": 0.59710000641644,
+      "effects": {
+        "ca": 0.2205505195090506,
+        "cb": 0.07649271693597078
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.2345536185603896,
+      "selected": 0.4551979646395694,
+      "fixed_priority": 0.4551979646395694,
+      "random_expected": 0.37242560309339834,
+      "oracle": 0.4551979646395694,
+      "observer_ms": 0.8302000060211867,
+      "effects": {
+        "ca": 0.4551979646395694,
+        "cb": 0.2896532415472272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2256155835517828,
+      "fixed_priority": 0.2256155835517828,
+      "random_expected": 0.21763554790248374,
+      "oracle": 0.4619943250906513,
+      "observer_ms": 3.9175999991130084,
+      "effects": {
+        "qa": 0.17447015613709138,
+        "qb": 0.11722630844060422,
+        "ca": 0.2256155835517828,
+        "cb": 0.10887136629228904,
+        "qt": 0.4619943250906513
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5198687783003114,
+      "fixed_priority": 0.5198687783003114,
+      "random_expected": 0.5610664212016424,
+      "oracle": 1.2239541328493055,
+      "observer_ms": 3.12180002219975,
+      "effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376929,
+        "ca": 0.5198687783003114,
+        "cb": 0.3310122269458877,
+        "qt": 1.2239541328493055
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.23142301480521607,
+      "fixed_priority": 0.23142301480521607,
+      "random_expected": 0.17609342327566835,
+      "oracle": 0.3149326396590526,
+      "observer_ms": 3.875299997162074,
+      "effects": {
+        "qa": 0.13964990013482992,
+        "qb": 0.0867939687647511,
+        "ca": 0.23142301480521607,
+        "cb": 0.10766759301449207,
+        "qt": 0.3149326396590526
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.7037230209843135,
+      "fixed_priority": 0.7037230209843135,
+      "random_expected": 0.6101679985445264,
+      "oracle": 1.168879177834134,
+      "observer_ms": 3.202400024747476,
+      "effects": {
+        "qa": 0.4799607734983715,
+        "qb": 0.2982613456246317,
+        "ca": 0.7037230209843135,
+        "cb": 0.4000156747811814,
+        "qt": 1.168879177834134
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.5798122549687388,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.09663537582812314,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5636999849230051,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.19327075165624627
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.966506170584146,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.16108436176402433,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.599899998633191,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.32216872352804865
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6616515585271517,
+      "selected": 0.22055051950905058,
+      "fixed_priority": 0.22055051950905058,
+      "random_expected": 0.11027525975452529,
+      "oracle": 0.22055051950905058,
+      "observer_ms": 0.6240999791771173,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22055051950905058
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.365593893918708,
+      "selected": 0.45519796463956935,
+      "fixed_priority": 0.45519796463956935,
+      "random_expected": 0.22759898231978468,
+      "oracle": 0.45519796463956935,
+      "observer_ms": 0.7076000038068742,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.45519796463956935
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.31542773982666045,
+      "selected": 0.10514257994222015,
+      "fixed_priority": 0.10514257994222015,
+      "random_expected": 0.052571289971110075,
+      "oracle": 0.10514257994222015,
+      "observer_ms": 0.7090000144671649,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.10514257994222015
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.6625109717749238,
+      "selected": 0.22083699059164127,
+      "fixed_priority": 0.22083699059164127,
+      "random_expected": 0.11041849529582064,
+      "oracle": 0.22083699059164127,
+      "observer_ms": 0.5558999837376177,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.34443998918337404,
+      "selected": 0.11481332972779135,
+      "fixed_priority": 0.11481332972779135,
+      "random_expected": 0.05740666486389567,
+      "oracle": 0.11481332972779135,
+      "observer_ms": 0.5571999936364591,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.11481332972779135
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8689597246416814,
+      "selected": 0.2896532415472271,
+      "fixed_priority": 0.2896532415472271,
+      "random_expected": 0.14482662077361355,
+      "oracle": 0.2896532415472271,
+      "observer_ms": 0.5643000185955316,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.2896532415472271
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8952399947953993,
+      "selected": 0.19327075165624627,
+      "fixed_priority": 0.19327075165624627,
+      "random_expected": 0.14920666579923322,
+      "oracle": 0.19327075165624627,
+      "observer_ms": 0.5719999899156392,
+      "effects": {
+        "ca": 0.19327075165624627,
+        "cb": 0.10514257994222016
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.6290171423590698,
+      "selected": 0.32216872352804865,
+      "fixed_priority": 0.32216872352804865,
+      "random_expected": 0.27150285705984495,
+      "oracle": 0.32216872352804865,
+      "observer_ms": 0.5773000011686236,
+      "effects": {
+        "ca": 0.32216872352804865,
+        "cb": 0.22083699059164127
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.006091547710526,
+      "selected": 0.2205505195090506,
+      "fixed_priority": 0.2205505195090506,
+      "random_expected": 0.167681924618421,
+      "oracle": 0.2205505195090506,
+      "observer_ms": 0.5776999751105905,
+      "effects": {
+        "ca": 0.2205505195090506,
+        "cb": 0.11481332972779139
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.2345536185603896,
+      "selected": 0.4551979646395694,
+      "fixed_priority": 0.4551979646395694,
+      "random_expected": 0.37242560309339834,
+      "oracle": 0.4551979646395694,
+      "observer_ms": 0.6374999938998371,
+      "effects": {
+        "ca": 0.4551979646395694,
+        "cb": 0.2896532415472272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2256155835517828,
+      "fixed_priority": 0.2256155835517828,
+      "random_expected": 0.2122854187425586,
+      "oracle": 0.4619943250906513,
+      "observer_ms": 3.9217000012286007,
+      "effects": {
+        "qa": 0.17447015613709138,
+        "qb": 0.11722630844060422,
+        "ca": 0.2256155835517828,
+        "cb": 0.08212072049266335,
+        "qt": 0.4619943250906513
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5198687783003114,
+      "fixed_priority": 0.5198687783003114,
+      "random_expected": 0.5643010352680474,
+      "oracle": 1.2239541328493055,
+      "observer_ms": 3.1518999894615263,
+      "effects": {
+        "qa": 0.4251915651750142,
+        "qb": 0.3053054027376929,
+        "ca": 0.5198687783003114,
+        "cb": 0.3471852972779131,
+        "qt": 1.2239541328493055
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.23142301480521607,
+      "fixed_priority": 0.23142301480521607,
+      "random_expected": 0.17178115373627897,
+      "oracle": 0.3149326396590526,
+      "observer_ms": 3.81949997972697,
+      "effects": {
+        "qa": 0.13964990013482992,
+        "qb": 0.0867939687647511,
+        "ca": 0.23142301480521607,
+        "cb": 0.08610624531754518,
+        "qt": 0.3149326396590526
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.7037230209843135,
+      "fixed_priority": 0.7037230209843135,
+      "random_expected": 0.6126800468458861,
+      "oracle": 1.168879177834134,
+      "observer_ms": 3.126600000541657,
+      "effects": {
+        "qa": 0.4799607734983715,
+        "qb": 0.2982613456246317,
+        "ca": 0.7037230209843135,
+        "cb": 0.4125759162879796,
+        "qt": 1.168879177834134
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6651309641671505,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.09138984586635239,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.5714000144507736,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.18277969173270478
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8502714640120992,
+      "selected": 0.2834238213373664,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.1417119106686832,
+      "oracle": 0.2834238213373664,
+      "observer_ms": 0.5655999993905425,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.2834238213373664
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6366527568419639,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.10610879280699398,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.5684999923687428,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21221758561398796
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2264300893589608,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.20440501489316013,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.5602999881375581,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.40881002978632025
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3499203525359149,
+      "selected": 0.07770948785562626,
+      "fixed_priority": 0.07770948785562626,
+      "random_expected": 0.03885474392781313,
+      "oracle": 0.07770948785562626,
+      "observer_ms": 0.5649000231642276,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07770948785562626
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.9154224191744182,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.30514080639147273,
+      "random_expected": 0.15257040319573636,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.5590000073425472,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3691468934005441,
+      "selected": 0.12304896446684803,
+      "fixed_priority": 0.12304896446684803,
+      "random_expected": 0.061524482233424015,
+      "oracle": 0.12304896446684803,
+      "observer_ms": 0.5763999943155795,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.1007780530931415,
+      "selected": 0.3669260176977138,
+      "fixed_priority": 0.3669260176977138,
+      "random_expected": 0.1834630088488569,
+      "oracle": 0.3669260176977138,
+      "observer_ms": 0.5595999828074127,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8982594277340292,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.13024458979416553,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.7687000033911318,
+      "effects": {
+        "ca": 0.18277969173270478,
+        "cb": 0.07770948785562626
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "ca",
+      "before_width_pp": 1.7656938831865174,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.29428231386441955,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.6256999913603067,
+      "effects": {
+        "ca": 0.2834238213373664,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.005799650242508,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.167633275040418,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.5770999996457249,
+      "effects": {
+        "ca": 0.21221758561398796,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.3272081424521023,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.387868023742017,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.5849000008311123,
+      "effects": {
+        "ca": 0.40881002978632025,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2636859601950357,
+      "fixed_priority": 0.2636859601950357,
+      "random_expected": 0.1606711461336424,
+      "oracle": 0.2636859601950357,
+      "observer_ms": 3.882499993778765,
+      "effects": {
+        "qa": 0.22948744607601068,
+        "qb": 0.22948744607601068,
+        "ca": 0.2636859601950357,
+        "cb": 0.08069487832115489,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5450370596880493,
+      "fixed_priority": 0.5450370596880493,
+      "random_expected": 0.3874256784437339,
+      "oracle": 0.5450370596880493,
+      "observer_ms": 3.333200002089143,
+      "effects": {
+        "qa": 0.543638696010929,
+        "qb": 0.543638696010929,
+        "ca": 0.5450370596880493,
+        "cb": 0.30481394050876226,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.27167064155858794,
+      "fixed_priority": 0.27167064155858794,
+      "random_expected": 0.13633060149056492,
+      "oracle": 0.27167064155858794,
+      "observer_ms": 3.859999997075647,
+      "effects": {
+        "qa": 0.18190942608255933,
+        "qb": 0.14355186015330235,
+        "ca": 0.27167064155858794,
+        "cb": 0.08452107965837492,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.7195046136447214,
+      "fixed_priority": 0.7195046136447214,
+      "random_expected": 0.4416358158047212,
+      "oracle": 0.7195046136447214,
+      "observer_ms": 2.9980000108480453,
+      "effects": {
+        "qa": 0.6171656162582233,
+        "qb": 0.49911222190404403,
+        "ca": 0.7195046136447214,
+        "cb": 0.3723966272166173,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.5483390751981143,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.09138984586635239,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.5571999936364591,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.18277969173270478
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8502714640120992,
+      "selected": 0.2834238213373664,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.1417119106686832,
+      "oracle": 0.2834238213373664,
+      "observer_ms": 0.5636999849230051,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.2834238213373664
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6366527568419639,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.10610879280699398,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.5487000162247568,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21221758561398796
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2264300893589608,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.20440501489316013,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.6121000042185187,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.40881002978632025
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3499203525359149,
+      "selected": 0.11664011751197163,
+      "fixed_priority": 0.11664011751197163,
+      "random_expected": 0.05832005875598582,
+      "oracle": 0.11664011751197163,
+      "observer_ms": 0.5735000013373792,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.11664011751197163
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.9154224191744182,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.30514080639147273,
+      "random_expected": 0.15257040319573636,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.5577999982051551,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3691468934005441,
+      "selected": 0.12304896446684803,
+      "fixed_priority": 0.12304896446684803,
+      "random_expected": 0.061524482233424015,
+      "oracle": 0.12304896446684803,
+      "observer_ms": 0.5501999985426664,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.1007780530931415,
+      "selected": 0.3669260176977138,
+      "fixed_priority": 0.3669260176977138,
+      "random_expected": 0.1834630088488569,
+      "oracle": 0.3669260176977138,
+      "observer_ms": 0.58970000827685,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8982594277340292,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.1497099046223382,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.5777000042144209,
+      "effects": {
+        "ca": 0.18277969173270478,
+        "cb": 0.11664011751197163
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "ca",
+      "before_width_pp": 1.7656938831865174,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.29428231386441955,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.5674000130966306,
+      "effects": {
+        "ca": 0.2834238213373664,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.005799650242508,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.167633275040418,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.6037999992258847,
+      "effects": {
+        "ca": 0.21221758561398796,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.3272081424521023,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.387868023742017,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.5823999817948788,
+      "effects": {
+        "ca": 0.40881002978632025,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2636859601950357,
+      "fixed_priority": 0.2636859601950357,
+      "random_expected": 0.17178932673375424,
+      "oracle": 0.2636859601950357,
+      "observer_ms": 3.928200021618977,
+      "effects": {
+        "qa": 0.22948744607601068,
+        "qb": 0.22948744607601068,
+        "ca": 0.2636859601950357,
+        "cb": 0.1362857813217141,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5450370596880493,
+      "fixed_priority": 0.5450370596880493,
+      "random_expected": 0.43075345460825243,
+      "oracle": 0.5450370596880493,
+      "observer_ms": 3.1575000029988587,
+      "effects": {
+        "qa": 0.543638696010929,
+        "qb": 0.543638696010929,
+        "ca": 0.5450370596880493,
+        "cb": 0.5214528213313548,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.27167064155858794,
+      "fixed_priority": 0.27167064155858794,
+      "random_expected": 0.14393387540549313,
+      "oracle": 0.27167064155858794,
+      "observer_ms": 3.840100020170212,
+      "effects": {
+        "qa": 0.18190942608255933,
+        "qb": 0.14355186015330235,
+        "ca": 0.27167064155858794,
+        "cb": 0.12253744923301602,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.7195046136447214,
+      "fixed_priority": 0.7195046136447214,
+      "random_expected": 0.4889127557906955,
+      "oracle": 0.7195046136447214,
+      "observer_ms": 3.0655000009573996,
+      "effects": {
+        "qa": 0.6171656162582233,
+        "qb": 0.49911222190404403,
+        "ca": 0.7195046136447214,
+        "cb": 0.6087813271464888,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6651309641671505,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.09138984586635239,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.5746999813709408,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.18277969173270478
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8502714640120992,
+      "selected": 0.2834238213373664,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.1417119106686832,
+      "oracle": 0.2834238213373664,
+      "observer_ms": 0.5671000108122826,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.2834238213373664
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6366527568419639,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.10610879280699398,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.5591000081039965,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21221758561398796
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2264300893589608,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.20440501489316013,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.6114999996498227,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.40881002978632025
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3499203525359149,
+      "selected": 0.07770948785562626,
+      "fixed_priority": 0.07770948785562626,
+      "random_expected": 0.03885474392781313,
+      "oracle": 0.07770948785562626,
+      "observer_ms": 0.5657000001519918,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07770948785562626
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.9154224191744182,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.30514080639147273,
+      "random_expected": 0.15257040319573636,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.612299976637587,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3691468934005441,
+      "selected": 0.12304896446684803,
+      "fixed_priority": 0.12304896446684803,
+      "random_expected": 0.061524482233424015,
+      "oracle": 0.12304896446684803,
+      "observer_ms": 0.5629999795928597,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.1007780530931415,
+      "selected": 0.3669260176977138,
+      "fixed_priority": 0.3669260176977138,
+      "random_expected": 0.1834630088488569,
+      "oracle": 0.3669260176977138,
+      "observer_ms": 0.5628000071737915,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8982594277340292,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.13024458979416553,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.5817000055685639,
+      "effects": {
+        "ca": 0.18277969173270478,
+        "cb": 0.07770948785562626
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "ca",
+      "before_width_pp": 1.7656938831865174,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.29428231386441955,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.5816000048071146,
+      "effects": {
+        "ca": 0.2834238213373664,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.005799650242508,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.167633275040418,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.588800001423806,
+      "effects": {
+        "ca": 0.21221758561398796,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.3272081424521023,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.387868023742017,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.6160000048112124,
+      "effects": {
+        "ca": 0.40881002978632025,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2184194425721364,
+      "fixed_priority": 0.2184194425721364,
+      "random_expected": 0.15161784260906253,
+      "oracle": 0.22948744607601068,
+      "observer_ms": 3.9077000110410154,
+      "effects": {
+        "qa": 0.22948744607601068,
+        "qb": 0.22948744607601068,
+        "ca": 0.2184194425721364,
+        "cb": 0.08069487832115489,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5078370690301904,
+      "fixed_priority": 0.5078370690301904,
+      "random_expected": 0.3799856803121621,
+      "oracle": 0.543638696010929,
+      "observer_ms": 3.27139999717474,
+      "effects": {
+        "qa": 0.543638696010929,
+        "qb": 0.543638696010929,
+        "ca": 0.5078370690301904,
+        "cb": 0.30481394050876226,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.22754561901636905,
+      "fixed_priority": 0.22754561901636905,
+      "random_expected": 0.12750559698212113,
+      "oracle": 0.22754561901636905,
+      "observer_ms": 3.9451999764423817,
+      "effects": {
+        "qa": 0.18190942608255933,
+        "qb": 0.14355186015330235,
+        "ca": 0.22754561901636905,
+        "cb": 0.08452107965837492,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.6816353699631947,
+      "fixed_priority": 0.6816353699631947,
+      "random_expected": 0.4340619670684159,
+      "oracle": 0.6816353699631947,
+      "observer_ms": 3.0777000065427274,
+      "effects": {
+        "qa": 0.6171656162582233,
+        "qb": 0.49911222190404403,
+        "ca": 0.6816353699631947,
+        "cb": 0.3723966272166173,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.5483390751981143,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.09138984586635239,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.6272000027820468,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.18277969173270478
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8502714640120992,
+      "selected": 0.2834238213373664,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.1417119106686832,
+      "oracle": 0.2834238213373664,
+      "observer_ms": 0.5796999903395772,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.2834238213373664
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6366527568419639,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.10610879280699398,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.5672000115737319,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21221758561398796
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2264300893589608,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.20440501489316013,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.5868999869562685,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.40881002978632025
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3499203525359149,
+      "selected": 0.11664011751197163,
+      "fixed_priority": 0.11664011751197163,
+      "random_expected": 0.05832005875598582,
+      "oracle": 0.11664011751197163,
+      "observer_ms": 0.5658000009134412,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.11664011751197163
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.9154224191744182,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.30514080639147273,
+      "random_expected": 0.15257040319573636,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.5577999982051551,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3691468934005441,
+      "selected": 0.12304896446684803,
+      "fixed_priority": 0.12304896446684803,
+      "random_expected": 0.061524482233424015,
+      "oracle": 0.12304896446684803,
+      "observer_ms": 0.611600000411272,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.1007780530931415,
+      "selected": 0.3669260176977138,
+      "fixed_priority": 0.3669260176977138,
+      "random_expected": 0.1834630088488569,
+      "oracle": 0.3669260176977138,
+      "observer_ms": 0.5738000036217272,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8982594277340292,
+      "selected": 0.18277969173270478,
+      "fixed_priority": 0.18277969173270478,
+      "random_expected": 0.1497099046223382,
+      "oracle": 0.18277969173270478,
+      "observer_ms": 0.5915999936405569,
+      "effects": {
+        "ca": 0.18277969173270478,
+        "cb": 0.11664011751197163
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "ca",
+      "before_width_pp": 1.7656938831865174,
+      "selected": 0.30514080639147273,
+      "fixed_priority": 0.2834238213373664,
+      "random_expected": 0.29428231386441955,
+      "oracle": 0.30514080639147273,
+      "observer_ms": 0.6257000204641372,
+      "effects": {
+        "ca": 0.2834238213373664,
+        "cb": 0.30514080639147273
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.005799650242508,
+      "selected": 0.21221758561398796,
+      "fixed_priority": 0.21221758561398796,
+      "random_expected": 0.167633275040418,
+      "oracle": 0.21221758561398796,
+      "observer_ms": 0.6280000088736415,
+      "effects": {
+        "ca": 0.21221758561398796,
+        "cb": 0.12304896446684803
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.3272081424521023,
+      "selected": 0.40881002978632025,
+      "fixed_priority": 0.40881002978632025,
+      "random_expected": 0.387868023742017,
+      "oracle": 0.40881002978632025,
+      "observer_ms": 0.5851000023540109,
+      "effects": {
+        "ca": 0.40881002978632025,
+        "cb": 0.3669260176977138
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2184194425721364,
+      "fixed_priority": 0.2184194425721364,
+      "random_expected": 0.16273602320917438,
+      "oracle": 0.22948744607601068,
+      "observer_ms": 3.9667999953962862,
+      "effects": {
+        "qa": 0.22948744607601068,
+        "qb": 0.22948744607601068,
+        "ca": 0.2184194425721364,
+        "cb": 0.1362857813217141,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5078370690301904,
+      "fixed_priority": 0.5078370690301904,
+      "random_expected": 0.4233134564766806,
+      "oracle": 0.543638696010929,
+      "observer_ms": 3.1285999866668135,
+      "effects": {
+        "qa": 0.543638696010929,
+        "qb": 0.543638696010929,
+        "ca": 0.5078370690301904,
+        "cb": 0.5214528213313548,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.22754561901636905,
+      "fixed_priority": 0.22754561901636905,
+      "random_expected": 0.13510887089704934,
+      "oracle": 0.22754561901636905,
+      "observer_ms": 3.9287999970838428,
+      "effects": {
+        "qa": 0.18190942608255933,
+        "qb": 0.14355186015330235,
+        "ca": 0.22754561901636905,
+        "cb": 0.12253744923301602,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 0.65,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.6816353699631947,
+      "fixed_priority": 0.6816353699631947,
+      "random_expected": 0.4813389070543902,
+      "oracle": 0.6816353699631947,
+      "observer_ms": 3.2475999905727804,
+      "effects": {
+        "qa": 0.6171656162582233,
+        "qb": 0.49911222190404403,
+        "ca": 0.6816353699631947,
+        "cb": 0.6087813271464888,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7740037030813129,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.11223620474409213,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.6354000070132315,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22447240948818425
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.4372350793248532,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.23953917988747553,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.6133999850135297,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.47907835977495106
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8438996176913482,
+      "selected": 0.24413902384819328,
+      "fixed_priority": 0.24413902384819328,
+      "random_expected": 0.12206951192409664,
+      "oracle": 0.24413902384819328,
+      "observer_ms": 0.5705999792553484,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.24413902384819328
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.8660383031297147,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.31100638385495244,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5661000031977892,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.6220127677099049
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.30138966382338406,
+      "selected": 0.06693439640220795,
+      "fixed_priority": 0.06693439640220795,
+      "random_expected": 0.03346719820110398,
+      "oracle": 0.06693439640220795,
+      "observer_ms": 0.5662999756168574,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.06693439640220795
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.5828665531600845,
+      "selected": 0.1942888510533615,
+      "fixed_priority": 0.1942888510533615,
+      "random_expected": 0.09714442552668075,
+      "oracle": 0.1942888510533615,
+      "observer_ms": 0.5627000064123422,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3340206378012258,
+      "selected": 0.07417936388481912,
+      "fixed_priority": 0.07417936388481912,
+      "random_expected": 0.03708968194240956,
+      "oracle": 0.07417936388481912,
+      "observer_ms": 0.5686000222340226,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07417936388481912
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.7875711509636752,
+      "selected": 0.26252371698789173,
+      "fixed_priority": 0.26252371698789173,
+      "random_expected": 0.13126185849394587,
+      "oracle": 0.26252371698789173,
+      "observer_ms": 0.6338999955914915,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9748068922879368,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.1457034029451961,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.5898000090382993,
+      "effects": {
+        "ca": 0.22447240948818425,
+        "cb": 0.06693439640220795
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.0201016324849377,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.33668360541415626,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.5868000152986497,
+      "effects": {
+        "ca": 0.47907835977495106,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0664377093458057,
+      "selected": 0.2441390238481933,
+      "fixed_priority": 0.2441390238481933,
+      "random_expected": 0.15915919386650623,
+      "oracle": 0.2441390238481933,
+      "observer_ms": 0.5844999977853149,
+      "effects": {
+        "ca": 0.2441390238481933,
+        "cb": 0.07417936388481916
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.65360945409339,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.4422682423488983,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5922999989707023,
+      "effects": {
+        "ca": 0.6220127677099049,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.21925492585672468,
+      "fixed_priority": 0.21925492585672468,
+      "random_expected": 0.14546204794436884,
+      "oracle": 0.21925492585672468,
+      "observer_ms": 3.939999995054677,
+      "effects": {
+        "qa": 0.19121371379905688,
+        "qb": 0.19121371379905688,
+        "ca": 0.21925492585672468,
+        "cb": 0.12562788626700572,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.503361701745141,
+      "fixed_priority": 0.503361701745141,
+      "random_expected": 0.33802816197078833,
+      "oracle": 0.503361701745141,
+      "observer_ms": 3.2242000161204487,
+      "effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.503361701745141,
+        "cb": 0.353909465385363,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.22655218880142045,
+      "fixed_priority": 0.22655218880142045,
+      "random_expected": 0.12473132428357461,
+      "oracle": 0.22655218880142045,
+      "observer_ms": 3.909799997927621,
+      "effects": {
+        "qa": 0.1273319337310843,
+        "qb": 0.15159039653091044,
+        "ca": 0.22655218880142045,
+        "cb": 0.11818210235445788,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.6778117566442012,
+      "fixed_priority": 0.6778117566442012,
+      "random_expected": 0.3855962393885504,
+      "oracle": 0.6778117566442012,
+      "observer_ms": 3.109200013568625,
+      "effects": {
+        "qa": 0.37263980528057283,
+        "qb": 0.4539649604375795,
+        "ca": 0.6778117566442012,
+        "cb": 0.4235646745803985,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6734172284645528,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.11223620474409213,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.6199000054039061,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22447240948818425
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.4372350793248532,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.23953917988747553,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.5687999946530908,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.47907835977495106
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7324170715445798,
+      "selected": 0.24413902384819328,
+      "fixed_priority": 0.24413902384819328,
+      "random_expected": 0.12206951192409664,
+      "oracle": 0.24413902384819328,
+      "observer_ms": 0.5578999989666045,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.24413902384819328
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.8660383031297147,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.31100638385495244,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5582000012509525,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.6220127677099049
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.30138966382338406,
+      "selected": 0.10046322127446135,
+      "fixed_priority": 0.10046322127446135,
+      "random_expected": 0.050231610637230674,
+      "oracle": 0.10046322127446135,
+      "observer_ms": 0.5640999879688025,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.10046322127446135
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.5828665531600845,
+      "selected": 0.1942888510533615,
+      "fixed_priority": 0.1942888510533615,
+      "random_expected": 0.09714442552668075,
+      "oracle": 0.1942888510533615,
+      "observer_ms": 0.6081000028643757,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3340206378012258,
+      "selected": 0.1113402126004086,
+      "fixed_priority": 0.1113402126004086,
+      "random_expected": 0.0556701063002043,
+      "oracle": 0.1113402126004086,
+      "observer_ms": 0.5869999877177179,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1113402126004086
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.7875711509636752,
+      "selected": 0.26252371698789173,
+      "fixed_priority": 0.26252371698789173,
+      "random_expected": 0.13126185849394587,
+      "oracle": 0.26252371698789173,
+      "observer_ms": 0.6213000160641968,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9748068922879368,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.1624678153813228,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.5846999993082136,
+      "effects": {
+        "ca": 0.22447240948818425,
+        "cb": 0.10046322127446135
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.0201016324849377,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.33668360541415626,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.5943999858573079,
+      "effects": {
+        "ca": 0.47907835977495106,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0664377093458057,
+      "selected": 0.2441390238481933,
+      "fixed_priority": 0.2441390238481933,
+      "random_expected": 0.17773961822430098,
+      "oracle": 0.2441390238481933,
+      "observer_ms": 0.5764999950770289,
+      "effects": {
+        "ca": 0.2441390238481933,
+        "cb": 0.11134021260040865
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.65360945409339,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.4422682423488983,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5747000104747713,
+      "effects": {
+        "ca": 0.6220127677099049,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.21925492585672468,
+      "fixed_priority": 0.21925492585672468,
+      "random_expected": 0.13736576759516816,
+      "oracle": 0.21925492585672468,
+      "observer_ms": 4.058899998199195,
+      "effects": {
+        "qa": 0.19121371379905688,
+        "qb": 0.19121371379905688,
+        "ca": 0.21925492585672468,
+        "cb": 0.08514648452100244,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.503361701745141,
+      "fixed_priority": 0.503361701745141,
+      "random_expected": 0.32775813345862026,
+      "oracle": 0.503361701745141,
+      "observer_ms": 3.2702000171411783,
+      "effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.503361701745141,
+        "cb": 0.30255932282452264,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.22655218880142045,
+      "fixed_priority": 0.22655218880142045,
+      "random_expected": 0.11696534960826883,
+      "oracle": 0.22655218880142045,
+      "observer_ms": 3.9018999959807843,
+      "effects": {
+        "qa": 0.1273319337310843,
+        "qb": 0.15159039653091044,
+        "ca": 0.22655218880142045,
+        "cb": 0.079352228977929,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.6778117566442012,
+      "fixed_priority": 0.6778117566442012,
+      "random_expected": 0.3755502983813751,
+      "oracle": 0.6778117566442012,
+      "observer_ms": 3.058899979805574,
+      "effects": {
+        "qa": 0.37263980528057283,
+        "qb": 0.4539649604375795,
+        "ca": 0.6778117566442012,
+        "cb": 0.373334969544522,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7740037030813129,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.11223620474409213,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.5696000007446855,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22447240948818425
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.4372350793248532,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.23953917988747553,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.5678000161424279,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.47907835977495106
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.8438996176913482,
+      "selected": 0.24413902384819328,
+      "fixed_priority": 0.24413902384819328,
+      "random_expected": 0.12206951192409664,
+      "oracle": 0.24413902384819328,
+      "observer_ms": 0.599899998633191,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.24413902384819328
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.8660383031297147,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.31100638385495244,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5668000085279346,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.6220127677099049
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.30138966382338406,
+      "selected": 0.06693439640220795,
+      "fixed_priority": 0.06693439640220795,
+      "random_expected": 0.03346719820110398,
+      "oracle": 0.06693439640220795,
+      "observer_ms": 0.5657000001519918,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.06693439640220795
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.5828665531600845,
+      "selected": 0.1942888510533615,
+      "fixed_priority": 0.1942888510533615,
+      "random_expected": 0.09714442552668075,
+      "oracle": 0.1942888510533615,
+      "observer_ms": 0.601100007770583,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3340206378012258,
+      "selected": 0.07417936388481912,
+      "fixed_priority": 0.07417936388481912,
+      "random_expected": 0.03708968194240956,
+      "oracle": 0.07417936388481912,
+      "observer_ms": 0.5603999888990074,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07417936388481912
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.7875711509636752,
+      "selected": 0.26252371698789173,
+      "fixed_priority": 0.26252371698789173,
+      "random_expected": 0.13126185849394587,
+      "oracle": 0.26252371698789173,
+      "observer_ms": 0.5672000115737319,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9748068922879368,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.1457034029451961,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.5751999851781875,
+      "effects": {
+        "ca": 0.22447240948818425,
+        "cb": 0.06693439640220795
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.0201016324849377,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.33668360541415626,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.5797999911010265,
+      "effects": {
+        "ca": 0.47907835977495106,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0664377093458057,
+      "selected": 0.2441390238481933,
+      "fixed_priority": 0.2441390238481933,
+      "random_expected": 0.15915919386650623,
+      "oracle": 0.2441390238481933,
+      "observer_ms": 0.5815000040456653,
+      "effects": {
+        "ca": 0.2441390238481933,
+        "cb": 0.07417936388481916
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.65360945409339,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.4422682423488983,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5743000074289739,
+      "effects": {
+        "ca": 0.6220127677099049,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2725033519053563,
+      "fixed_priority": 0.2725033519053563,
+      "random_expected": 0.15611173315409516,
+      "oracle": 0.2725033519053563,
+      "observer_ms": 4.029200004879385,
+      "effects": {
+        "qa": 0.19121371379905688,
+        "qb": 0.19121371379905688,
+        "ca": 0.2725033519053563,
+        "cb": 0.12562788626700572,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.6880199008126681,
+      "fixed_priority": 0.6880199008126681,
+      "random_expected": 0.3749598017842937,
+      "oracle": 0.6880199008126681,
+      "observer_ms": 3.2482999959029257,
+      "effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.6880199008126681,
+        "cb": 0.353909465385363,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.2711944291244239,
+      "fixed_priority": 0.2711944291244239,
+      "random_expected": 0.1336597723481753,
+      "oracle": 0.2711944291244239,
+      "observer_ms": 4.214200016576797,
+      "effects": {
+        "qa": 0.1273319337310843,
+        "qb": 0.15159039653091044,
+        "ca": 0.2711944291244239,
+        "cb": 0.11818210235445788,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.8510476116891725,
+      "fixed_priority": 0.8510476116891725,
+      "random_expected": 0.42024341039754465,
+      "oracle": 0.8510476116891725,
+      "observer_ms": 3.110299992840737,
+      "effects": {
+        "qa": 0.37263980528057283,
+        "qb": 0.4539649604375795,
+        "ca": 0.8510476116891725,
+        "cb": 0.4235646745803985,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6734172284645528,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.11223620474409213,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.587500020628795,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.22447240948818425
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.4372350793248532,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.23953917988747553,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.5815000040456653,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.47907835977495106
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7324170715445798,
+      "selected": 0.24413902384819328,
+      "fixed_priority": 0.24413902384819328,
+      "random_expected": 0.12206951192409664,
+      "oracle": 0.24413902384819328,
+      "observer_ms": 0.6314000056590885,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.24413902384819328
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.8660383031297147,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.31100638385495244,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.6086999783292413,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.6220127677099049
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.30138966382338406,
+      "selected": 0.10046322127446135,
+      "fixed_priority": 0.10046322127446135,
+      "random_expected": 0.050231610637230674,
+      "oracle": 0.10046322127446135,
+      "observer_ms": 0.5966999742668122,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.10046322127446135
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.5828665531600845,
+      "selected": 0.1942888510533615,
+      "fixed_priority": 0.1942888510533615,
+      "random_expected": 0.09714442552668075,
+      "oracle": 0.1942888510533615,
+      "observer_ms": 0.5605000187642872,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3340206378012258,
+      "selected": 0.1113402126004086,
+      "fixed_priority": 0.1113402126004086,
+      "random_expected": 0.0556701063002043,
+      "oracle": 0.1113402126004086,
+      "observer_ms": 0.6113999988883734,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1113402126004086
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.7875711509636752,
+      "selected": 0.26252371698789173,
+      "fixed_priority": 0.26252371698789173,
+      "random_expected": 0.13126185849394587,
+      "oracle": 0.26252371698789173,
+      "observer_ms": 0.6300999957602471,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9748068922879368,
+      "selected": 0.22447240948818425,
+      "fixed_priority": 0.22447240948818425,
+      "random_expected": 0.1624678153813228,
+      "oracle": 0.22447240948818425,
+      "observer_ms": 0.5893000052310526,
+      "effects": {
+        "ca": 0.22447240948818425,
+        "cb": 0.10046322127446135
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.0201016324849377,
+      "selected": 0.47907835977495106,
+      "fixed_priority": 0.47907835977495106,
+      "random_expected": 0.33668360541415626,
+      "oracle": 0.47907835977495106,
+      "observer_ms": 0.6026000191923231,
+      "effects": {
+        "ca": 0.47907835977495106,
+        "cb": 0.1942888510533615
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0664377093458057,
+      "selected": 0.2441390238481933,
+      "fixed_priority": 0.2441390238481933,
+      "random_expected": 0.17773961822430098,
+      "oracle": 0.2441390238481933,
+      "observer_ms": 0.5878999945707619,
+      "effects": {
+        "ca": 0.2441390238481933,
+        "cb": 0.11134021260040865
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.65360945409339,
+      "selected": 0.6220127677099049,
+      "fixed_priority": 0.6220127677099049,
+      "random_expected": 0.4422682423488983,
+      "oracle": 0.6220127677099049,
+      "observer_ms": 0.5707000091206282,
+      "effects": {
+        "ca": 0.6220127677099049,
+        "cb": 0.26252371698789173
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.2725033519053563,
+      "fixed_priority": 0.2725033519053563,
+      "random_expected": 0.1480154528048945,
+      "oracle": 0.2725033519053563,
+      "observer_ms": 3.941700007999316,
+      "effects": {
+        "qa": 0.19121371379905688,
+        "qb": 0.19121371379905688,
+        "ca": 0.2725033519053563,
+        "cb": 0.08514648452100244,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.6880199008126681,
+      "fixed_priority": 0.6880199008126681,
+      "random_expected": 0.36468977327212565,
+      "oracle": 0.6880199008126681,
+      "observer_ms": 3.2267000060528517,
+      "effects": {
+        "qa": 0.41643482136171883,
+        "qb": 0.41643482136171883,
+        "ca": 0.6880199008126681,
+        "cb": 0.30255932282452264,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.2711944291244239,
+      "fixed_priority": 0.2711944291244239,
+      "random_expected": 0.1258937976728695,
+      "oracle": 0.2711944291244239,
+      "observer_ms": 3.860500000882894,
+      "effects": {
+        "qa": 0.1273319337310843,
+        "qb": 0.15159039653091044,
+        "ca": 0.2711944291244239,
+        "cb": 0.079352228977929,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 0.65,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.8510476116891725,
+      "fixed_priority": 0.8510476116891725,
+      "random_expected": 0.4101974693903694,
+      "oracle": 0.8510476116891725,
+      "observer_ms": 3.1177000200841576,
+      "effects": {
+        "qa": 0.37263980528057283,
+        "qb": 0.4539649604375795,
+        "ca": 0.8510476116891725,
+        "cb": 0.373334969544522,
+        "qt": 0.0
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7615403793108015,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.10802264268364718,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5744999798480421,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21604528536729437
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2882424363559055,
+      "selected": 0.4294141454519685,
+      "fixed_priority": 0.4294141454519685,
+      "random_expected": 0.21470707272598424,
+      "oracle": 0.4294141454519685,
+      "observer_ms": 0.5673999839928001,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.4294141454519685
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7137909436443681,
+      "selected": 0.23793031454812272,
+      "fixed_priority": 0.23793031454812272,
+      "random_expected": 0.11896515727406136,
+      "oracle": 0.23793031454812272,
+      "observer_ms": 0.5902000120840967,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.23793031454812272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.7170559621370447,
+      "selected": 0.5723519873790149,
+      "fixed_priority": 0.5723519873790149,
+      "random_expected": 0.28617599368950747,
+      "oracle": 0.5723519873790149,
+      "observer_ms": 0.6359000108204782,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.5723519873790149
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.33977634942588153,
+      "selected": 0.07545727540565435,
+      "fixed_priority": 0.07545727540565435,
+      "random_expected": 0.037728637702827174,
+      "oracle": 0.07545727540565435,
+      "observer_ms": 0.5606999911833555,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07545727540565435
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8314425755287844,
+      "selected": 0.27714752517626146,
+      "fixed_priority": 0.27714752517626146,
+      "random_expected": 0.13857376258813073,
+      "oracle": 0.27714752517626146,
+      "observer_ms": 0.5739000043831766,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.27714752517626146
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3620050408610319,
+      "selected": 0.1206683469536773,
+      "fixed_priority": 0.1206683469536773,
+      "random_expected": 0.06033417347683865,
+      "oracle": 0.1206683469536773,
+      "observer_ms": 0.5988999910186976,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1206683469536773
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.0276322518940737,
+      "selected": 0.3425440839646912,
+      "fixed_priority": 0.3425440839646912,
+      "random_expected": 0.1712720419823456,
+      "oracle": 0.3425440839646912,
+      "observer_ms": 0.5587000050581992,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3425440839646912
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9879122055277646,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.14575128038647436,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.6487999926321208,
+      "effects": {
+        "ca": 0.21604528536729437,
+        "cb": 0.07545727540565435
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.11968501188469,
+      "selected": 0.4294141454519686,
+      "fixed_priority": 0.4294141454519686,
+      "random_expected": 0.3532808353141151,
+      "oracle": 0.4294141454519686,
+      "observer_ms": 0.5917999951634556,
+      "effects": {
+        "ca": 0.4294141454519686,
+        "cb": 0.27714752517626157
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0757959845054001,
+      "selected": 0.23793031454812275,
+      "fixed_priority": 0.23793031454812275,
+      "random_expected": 0.17929933075090004,
+      "oracle": 0.23793031454812275,
+      "observer_ms": 0.6030999938957393,
+      "effects": {
+        "ca": 0.23793031454812275,
+        "cb": 0.12066834695367734
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.744688214031118,
+      "selected": 0.5723519873790148,
+      "fixed_priority": 0.5723519873790148,
+      "random_expected": 0.457448035671853,
+      "oracle": 0.5723519873790148,
+      "observer_ms": 0.5893000052310526,
+      "effects": {
+        "ca": 0.5723519873790148,
+        "cb": 0.34254408396469116
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.21637089180614819,
+      "fixed_priority": 0.21637089180614819,
+      "random_expected": 0.19322783029661342,
+      "oracle": 0.369322114358286,
+      "observer_ms": 3.8597999955527484,
+      "effects": {
+        "qa": 0.184661057179143,
+        "qb": 0.1077375878330098,
+        "ca": 0.21637089180614819,
+        "cb": 0.08804750030648008,
+        "qt": 0.369322114358286
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.4954744993150267,
+      "fixed_priority": 0.4954744993150267,
+      "random_expected": 0.4331604457705368,
+      "oracle": 0.7332862633236852,
+      "observer_ms": 3.1796999974176288,
+      "effects": {
+        "qa": 0.3666431316618426,
+        "qb": 0.2663720329794719,
+        "ca": 0.4954744993150267,
+        "cb": 0.3040263015726576,
+        "qt": 0.7332862633236852
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.22853432119699,
+      "fixed_priority": 0.22853432119699,
+      "random_expected": 0.16312061864931207,
+      "oracle": 0.29382251790222647,
+      "observer_ms": 3.8744000194128603,
+      "effects": {
+        "qa": 0.12323267156446105,
+        "qb": 0.07838266935467764,
+        "ca": 0.22853432119699,
+        "cb": 0.09163091322820523,
+        "qt": 0.29382251790222647
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.7165204104815756,
+      "fixed_priority": 0.7165204104815756,
+      "random_expected": 0.4991670992559427,
+      "oracle": 0.8168511609374307,
+      "observer_ms": 3.0647999956272542,
+      "effects": {
+        "qa": 0.33053628130651735,
+        "qb": 0.25730610336224125,
+        "ca": 0.7165204104815756,
+        "cb": 0.3746215401919488,
+        "qt": 0.8168511609374307
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6481358561018831,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.10802264268364718,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5756000173278153,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21604528536729437
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2882424363559055,
+      "selected": 0.4294141454519685,
+      "fixed_priority": 0.4294141454519685,
+      "random_expected": 0.21470707272598424,
+      "oracle": 0.4294141454519685,
+      "observer_ms": 0.5750000127591193,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.4294141454519685
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7137909436443681,
+      "selected": 0.23793031454812272,
+      "fixed_priority": 0.23793031454812272,
+      "random_expected": 0.11896515727406136,
+      "oracle": 0.23793031454812272,
+      "observer_ms": 0.5778000049758703,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.23793031454812272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.7170559621370447,
+      "selected": 0.5723519873790149,
+      "fixed_priority": 0.5723519873790149,
+      "random_expected": 0.28617599368950747,
+      "oracle": 0.5723519873790149,
+      "observer_ms": 0.5710000114049762,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.5723519873790149
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.33977634942588153,
+      "selected": 0.11325878314196051,
+      "fixed_priority": 0.11325878314196051,
+      "random_expected": 0.05662939157098026,
+      "oracle": 0.11325878314196051,
+      "observer_ms": 0.5628000071737915,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.11325878314196051
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8314425755287844,
+      "selected": 0.27714752517626146,
+      "fixed_priority": 0.27714752517626146,
+      "random_expected": 0.13857376258813073,
+      "oracle": 0.27714752517626146,
+      "observer_ms": 0.5711000121664256,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.27714752517626146
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3620050408610319,
+      "selected": 0.1206683469536773,
+      "fixed_priority": 0.1206683469536773,
+      "random_expected": 0.06033417347683865,
+      "oracle": 0.1206683469536773,
+      "observer_ms": 0.5831000162288547,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1206683469536773
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.0276322518940737,
+      "selected": 0.3425440839646912,
+      "fixed_priority": 0.3425440839646912,
+      "random_expected": 0.1712720419823456,
+      "oracle": 0.3425440839646912,
+      "observer_ms": 0.5757000180892646,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3425440839646912
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9879122055277646,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.16465203425462743,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5879999953322113,
+      "effects": {
+        "ca": 0.21604528536729437,
+        "cb": 0.11325878314196051
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.11968501188469,
+      "selected": 0.4294141454519686,
+      "fixed_priority": 0.4294141454519686,
+      "random_expected": 0.3532808353141151,
+      "oracle": 0.4294141454519686,
+      "observer_ms": 0.5812000017613173,
+      "effects": {
+        "ca": 0.4294141454519686,
+        "cb": 0.27714752517626157
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0757959845054001,
+      "selected": 0.23793031454812275,
+      "fixed_priority": 0.23793031454812275,
+      "random_expected": 0.17929933075090004,
+      "oracle": 0.23793031454812275,
+      "observer_ms": 0.6256999913603067,
+      "effects": {
+        "ca": 0.23793031454812275,
+        "cb": 0.12066834695367734
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.744688214031118,
+      "selected": 0.5723519873790148,
+      "fixed_priority": 0.5723519873790148,
+      "random_expected": 0.457448035671853,
+      "oracle": 0.5723519873790148,
+      "observer_ms": 0.5792999872937799,
+      "effects": {
+        "ca": 0.5723519873790148,
+        "cb": 0.34254408396469116
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.21637089180614819,
+      "fixed_priority": 0.21637089180614819,
+      "random_expected": 0.19902254893556387,
+      "oracle": 0.369322114358286,
+      "observer_ms": 4.04919998254627,
+      "effects": {
+        "qa": 0.184661057179143,
+        "qb": 0.1077375878330098,
+        "ca": 0.21637089180614819,
+        "cb": 0.11702109350123242,
+        "qt": 0.369322114358286
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.4954744993150267,
+      "fixed_priority": 0.4954744993150267,
+      "random_expected": 0.45215840715824007,
+      "oracle": 0.7332862633236852,
+      "observer_ms": 3.256399999372661,
+      "effects": {
+        "qa": 0.3666431316618426,
+        "qb": 0.2663720329794719,
+        "ca": 0.4954744993150267,
+        "cb": 0.39901610851117414,
+        "qt": 0.7332862633236852
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.22853432119699,
+      "fixed_priority": 0.22853432119699,
+      "random_expected": 0.16706247852375275,
+      "oracle": 0.29382251790222647,
+      "observer_ms": 3.8938000216148794,
+      "effects": {
+        "qa": 0.12323267156446105,
+        "qb": 0.07838266935467764,
+        "ca": 0.22853432119699,
+        "cb": 0.1113402126004086,
+        "qt": 0.29382251790222647
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 0.5,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.7165204104815756,
+      "fixed_priority": 0.7165204104815756,
+      "random_expected": 0.5196194297220978,
+      "oracle": 0.8168511609374307,
+      "observer_ms": 3.0712000152561814,
+      "effects": {
+        "qa": 0.33053628130651735,
+        "qb": 0.25730610336224125,
+        "ca": 0.7165204104815756,
+        "cb": 0.47688319252272454,
+        "qt": 0.8168511609374307
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7615403793108015,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.10802264268364718,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5827999848406762,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21604528536729437
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2882424363559055,
+      "selected": 0.4294141454519685,
+      "fixed_priority": 0.4294141454519685,
+      "random_expected": 0.21470707272598424,
+      "oracle": 0.4294141454519685,
+      "observer_ms": 0.6290999881457537,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.4294141454519685
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7137909436443681,
+      "selected": 0.23793031454812272,
+      "fixed_priority": 0.23793031454812272,
+      "random_expected": 0.11896515727406136,
+      "oracle": 0.23793031454812272,
+      "observer_ms": 0.5739000043831766,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.23793031454812272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.7170559621370447,
+      "selected": 0.5723519873790149,
+      "fixed_priority": 0.5723519873790149,
+      "random_expected": 0.28617599368950747,
+      "oracle": 0.5723519873790149,
+      "observer_ms": 0.5982999864500016,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.5723519873790149
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.33977634942588153,
+      "selected": 0.07545727540565435,
+      "fixed_priority": 0.07545727540565435,
+      "random_expected": 0.037728637702827174,
+      "oracle": 0.07545727540565435,
+      "observer_ms": 0.6057000136934221,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.07545727540565435
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8314425755287844,
+      "selected": 0.27714752517626146,
+      "fixed_priority": 0.27714752517626146,
+      "random_expected": 0.13857376258813073,
+      "oracle": 0.27714752517626146,
+      "observer_ms": 0.5792999872937799,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.27714752517626146
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3620050408610319,
+      "selected": 0.1206683469536773,
+      "fixed_priority": 0.1206683469536773,
+      "random_expected": 0.06033417347683865,
+      "oracle": 0.1206683469536773,
+      "observer_ms": 0.6582000060006976,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1206683469536773
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.0276322518940737,
+      "selected": 0.3425440839646912,
+      "fixed_priority": 0.3425440839646912,
+      "random_expected": 0.1712720419823456,
+      "oracle": 0.3425440839646912,
+      "observer_ms": 0.5582000012509525,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3425440839646912
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9879122055277646,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.14575128038647436,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5903999845031649,
+      "effects": {
+        "ca": 0.21604528536729437,
+        "cb": 0.07545727540565435
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.11968501188469,
+      "selected": 0.4294141454519686,
+      "fixed_priority": 0.4294141454519686,
+      "random_expected": 0.3532808353141151,
+      "oracle": 0.4294141454519686,
+      "observer_ms": 0.6685999978799373,
+      "effects": {
+        "ca": 0.4294141454519686,
+        "cb": 0.27714752517626157
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0757959845054001,
+      "selected": 0.23793031454812275,
+      "fixed_priority": 0.23793031454812275,
+      "random_expected": 0.17929933075090004,
+      "oracle": 0.23793031454812275,
+      "observer_ms": 0.5834999901708215,
+      "effects": {
+        "ca": 0.23793031454812275,
+        "cb": 0.12066834695367734
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.744688214031118,
+      "selected": 0.5723519873790148,
+      "fixed_priority": 0.5723519873790148,
+      "random_expected": 0.457448035671853,
+      "oracle": 0.5723519873790148,
+      "observer_ms": 0.6276000058278441,
+      "effects": {
+        "ca": 0.5723519873790148,
+        "cb": 0.34254408396469116
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.24275646440270002,
+      "fixed_priority": 0.24275646440270002,
+      "random_expected": 0.1985049448159238,
+      "oracle": 0.369322114358286,
+      "observer_ms": 3.996899991761893,
+      "effects": {
+        "qa": 0.184661057179143,
+        "qb": 0.1077375878330098,
+        "ca": 0.24275646440270002,
+        "cb": 0.08804750030648008,
+        "qt": 0.369322114358286
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5703462195501922,
+      "fixed_priority": 0.5703462195501922,
+      "random_expected": 0.4481347898175699,
+      "oracle": 0.7332862633236852,
+      "observer_ms": 3.2703999895602465,
+      "effects": {
+        "qa": 0.3666431316618426,
+        "qb": 0.2663720329794719,
+        "ca": 0.5703462195501922,
+        "cb": 0.3040263015726576,
+        "qt": 0.7332862633236852
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.25467023426739954,
+      "fixed_priority": 0.25467023426739954,
+      "random_expected": 0.168347801263394,
+      "oracle": 0.29382251790222647,
+      "observer_ms": 4.0948000096250325,
+      "effects": {
+        "qa": 0.12323267156446105,
+        "qb": 0.07838266935467764,
+        "ca": 0.25467023426739954,
+        "cb": 0.09163091322820523,
+        "qt": 0.29382251790222647
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 0.5
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.731035823151602,
+      "fixed_priority": 0.731035823151602,
+      "random_expected": 0.502070181789948,
+      "oracle": 0.8168511609374307,
+      "observer_ms": 3.0692000000271946,
+      "effects": {
+        "qa": 0.33053628130651735,
+        "qb": 0.25730610336224125,
+        "ca": 0.731035823151602,
+        "cb": 0.3746215401919488,
+        "qt": 0.8168511609374307
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.6481358561018831,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.10802264268364718,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5609999934677035,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.21604528536729437
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.2882424363559055,
+      "selected": 0.4294141454519685,
+      "fixed_priority": 0.4294141454519685,
+      "random_expected": 0.21470707272598424,
+      "oracle": 0.4294141454519685,
+      "observer_ms": 0.5982000147923827,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.4294141454519685
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.7137909436443681,
+      "selected": 0.23793031454812272,
+      "fixed_priority": 0.23793031454812272,
+      "random_expected": 0.11896515727406136,
+      "oracle": 0.23793031454812272,
+      "observer_ms": 0.592500000493601,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.23793031454812272
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "ca"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.7170559621370447,
+      "selected": 0.5723519873790149,
+      "fixed_priority": 0.5723519873790149,
+      "random_expected": 0.28617599368950747,
+      "oracle": 0.5723519873790149,
+      "observer_ms": 0.5735000013373792,
+      "effects": {
+        "qa": 0.0,
+        "ca": 0.5723519873790149
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.33977634942588153,
+      "selected": 0.11325878314196051,
+      "fixed_priority": 0.11325878314196051,
+      "random_expected": 0.05662939157098026,
+      "oracle": 0.11325878314196051,
+      "observer_ms": 0.5671000108122826,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.11325878314196051
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.8314425755287844,
+      "selected": 0.27714752517626146,
+      "fixed_priority": 0.27714752517626146,
+      "random_expected": 0.13857376258813073,
+      "oracle": 0.27714752517626146,
+      "observer_ms": 0.5667000077664852,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.27714752517626146
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 0.3620050408610319,
+      "selected": 0.1206683469536773,
+      "fixed_priority": 0.1206683469536773,
+      "random_expected": 0.06033417347683865,
+      "oracle": 0.1206683469536773,
+      "observer_ms": 0.5639999872073531,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.1206683469536773
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qb",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "cb",
+      "static_choice": "cb",
+      "before_width_pp": 1.0276322518940737,
+      "selected": 0.3425440839646912,
+      "fixed_priority": 0.3425440839646912,
+      "random_expected": 0.1712720419823456,
+      "oracle": 0.3425440839646912,
+      "observer_ms": 0.6571999983862042,
+      "effects": {
+        "qb": 0.0,
+        "cb": 0.3425440839646912
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 0.9879122055277646,
+      "selected": 0.21604528536729437,
+      "fixed_priority": 0.21604528536729437,
+      "random_expected": 0.16465203425462743,
+      "oracle": 0.21604528536729437,
+      "observer_ms": 0.5912999913562089,
+      "effects": {
+        "ca": 0.21604528536729437,
+        "cb": 0.11325878314196051
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.11968501188469,
+      "selected": 0.4294141454519686,
+      "fixed_priority": 0.4294141454519686,
+      "random_expected": 0.3532808353141151,
+      "oracle": 0.4294141454519686,
+      "observer_ms": 0.6070999952498823,
+      "effects": {
+        "ca": 0.4294141454519686,
+        "cb": 0.27714752517626157
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.0757959845054001,
+      "selected": 0.23793031454812275,
+      "fixed_priority": 0.23793031454812275,
+      "random_expected": 0.17929933075090004,
+      "oracle": 0.23793031454812275,
+      "observer_ms": 0.589100003708154,
+      "effects": {
+        "ca": 0.23793031454812275,
+        "cb": 0.12066834695367734
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "ca",
+        "cb"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.744688214031118,
+      "selected": 0.5723519873790148,
+      "fixed_priority": 0.5723519873790148,
+      "random_expected": 0.457448035671853,
+      "oracle": 0.5723519873790148,
+      "observer_ms": 0.5788999842479825,
+      "effects": {
+        "ca": 0.5723519873790148,
+        "cb": 0.34254408396469116
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3572343198860506,
+      "selected": 0.24275646440270002,
+      "fixed_priority": 0.24275646440270002,
+      "random_expected": 0.20429966345487424,
+      "oracle": 0.369322114358286,
+      "observer_ms": 4.116700001759455,
+      "effects": {
+        "qa": 0.184661057179143,
+        "qb": 0.1077375878330098,
+        "ca": 0.24275646440270002,
+        "cb": 0.11702109350123242,
+        "qt": 0.369322114358286
+      }
+    },
+    {
+      "parameters": {
+        "fan": 1,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 2.8529712752083753,
+      "selected": 0.5703462195501922,
+      "fixed_priority": 0.5703462195501922,
+      "random_expected": 0.4671327512052732,
+      "oracle": 0.7332862633236852,
+      "observer_ms": 3.214800002751872,
+      "effects": {
+        "qa": 0.3666431316618426,
+        "qb": 0.2663720329794719,
+        "ca": 0.5703462195501922,
+        "cb": 0.39901610851117414,
+        "qt": 0.7332862633236852
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 30,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 1.3696185024076266,
+      "selected": 0.25467023426739954,
+      "fixed_priority": 0.25467023426739954,
+      "random_expected": 0.17228966113783467,
+      "oracle": 0.29382251790222647,
+      "observer_ms": 3.942999988794327,
+      "effects": {
+        "qa": 0.12323267156446105,
+        "qb": 0.07838266935467764,
+        "ca": 0.25467023426739954,
+        "cb": 0.1113402126004086,
+        "qt": 0.29382251790222647
+      }
+    },
+    {
+      "parameters": {
+        "fan": 0.65,
+        "resistance_a": 2.5,
+        "resistance_b": 2.5,
+        "leakage": 1.0,
+        "gas_a": 2,
+        "gas_b": 2
+      },
+      "failed": [
+        "qa",
+        "qb",
+        "ca",
+        "cb",
+        "qt"
+      ],
+      "horizon_s": 120,
+      "chosen": "ca",
+      "static_choice": "ca",
+      "before_width_pp": 3.561539374968549,
+      "selected": 0.731035823151602,
+      "fixed_priority": 0.731035823151602,
+      "random_expected": 0.5225225122561031,
+      "oracle": 0.8168511609374307,
+      "observer_ms": 3.141900000628084,
+      "effects": {
+        "qa": 0.33053628130651735,
+        "qb": 0.25730610336224125,
+        "ca": 0.731035823151602,
+        "cb": 0.47688319252272454,
+        "qt": 0.8168511609374307
+      }
+    }
+  ]
+}

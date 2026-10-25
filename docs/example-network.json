@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "model_signature": "98ac940c96d3be5c9045f5b68ddb3a1b39c685d86fb32387043f5ea9dea3c460",
+  "seed": 20261025,
+  "timeline": [
+    {
+      "kind": "command",
+      "data": {
+        "action": "pause"
+      }
+    },
+    {
+      "kind": "command",
+      "data": {
+        "action": "scenario",
+        "name": "blind_all"
+      }
+    },
+    {
+      "kind": "command",
+      "data": {
+        "action": "scenario",
+        "name": "gas"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+name: Verify VentObserve
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  local-model-and-config:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m unittest discover -s tests -v
+      - run: node --check app/static/app.js
+      - run: node --check app/static/network.js
+      - run: python integration/start-platform.py --check-only
+      - run: python -m app.benchmark --extended --output /tmp/ventobserve-benchmark.json
+      - run: python -m app.network_evaluation

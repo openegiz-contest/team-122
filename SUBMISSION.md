@@ -1,64 +1,39 @@
-# SUBMISSION
+# Замысел
 
-<!-- Fill in every section. The AI Jury studies this file together with the code, the Build Report, the presentation and the Stand's interface. Accepted languages: English, Kazakh, Russian. These hint comments may be deleted. -->
+VentObserve представляет эквивалентную вентиляционную систему шахты Gucheng, опубликованную Jia, Ma, Gao (2025), с исследовательским синтетическим расширением для метана и измерений. Пользователь — инженер вентиляции, который сравнивает последствия изменения режима и решает, какое недоступное измерение восстановить для уменьшения неопределённости прогноза метана. Выбор объекта обусловлен наличием открытой связанной сети с сопротивлениями, геометрией, контрольными расходами и характеристиками двух вентиляторов.
 
-## Concept
+## Команда
 
-<!-- Written by the Team before the code: your own choice, a few sentences per answer. Everything else in the Submission follows from it. -->
+Название: **серики**. Единственный участник и автор: [awer13](https://github.com/awer13).
+Официальный репозиторий: https://github.com/openegiz-contest/team-122 . Версия для сдачи находится в ветке `main`.
 
-**Enterprise:** <!-- Which mining enterprise, or which part of it, the twin represents. -->
+## Модули и демонстрация
 
-**Users:** <!-- Who uses the twin. -->
+- Вентиляция: девять ветвей, десять узлов, два вентилятора, закрываемая связь e5. Схема показывает реальную расчётную топологию, направления и расходы; выберите объект для состояния и источника параметров.
+- Метан и наблюдение: перенос по сети, накопление в смешанных объёмах, восемь измерений, шум/отказ/задержка/зависание/смещение, исторический отбор траекторий и конфликт измерений.
+- Выбор восстановления: прогноз на 60/120/300/600 с, стоимость и задержка ремонта, ожидаемое и наблюдаемое сокращение ширины к одному абсолютному горизонту. Сравнение пяти стратегий воспроизводится командой `python -m app.network_evaluation`.
 
-**Decision:** <!-- Which decision the twin helps them make. -->
+Сценарии запускаются кнопками: вентилятор A 80%; сопротивление e6 ×2; закрытие e5; газовыделение ×2; потеря группы датчиков. Последствия: перераспределение воздуха, изменение выноса и смешения метана, качество оценки и выбор ремонта. Отмена — «Отменить воздействия»; полный новый опыт — кнопка сброса. Порядок демонстрации и проверки: `docs/DEMO.md`.
 
-**Why this choice:** <!-- Why this enterprise, these users and this decision. -->
+## Данные и допущения
 
-**Real or fictional:** <!-- A real object: name it and give the sources of its numbers. A fictional one: which real objects it resembles and where its numbers come from. A real object with sourced numbers scores higher. -->
+Воздушная сеть Gucheng из статьи Jia, Ma, Gao (2025), DOI 10.1371/journal.pone.0320326, CC BY 4.0. Код проекта — MIT, сторонняя платформа и данные сохраняют собственные лицензии. Источники газа, ошибки и стоимость/время ремонта синтетические. Объёмы смешения — половина суммарного геометрического объёма прилегающих ветвей, а не измеренный эффективный объём. Нет естественной тяги, внешние давления равны, газ рассматривается как разбавленная примесь. Подробности и единицы — `docs/PARAMETERS.md`.
 
-## Team
+## Доказательства и ограничения
 
-<!-- GitHub usernames of the Participants. Other personal data are not required: the repository becomes public after the Freeze (Rules, section 15). -->
+Проверки воздуха, массового баланса метана, чувствительности к шагу, API и воспроизведения находятся в tests. Отчёт 576 опытов содержит все записи, проигрыши и стресс-тесты. Прогнозный метод лучше простого правила в 120 случаях, равен в 456, но проигрывает случайной стратегии в 42 случаях. Это проверка внутри конечной сетки, не общая гарантия. При скрытом изменении источника и отсутствии датчиков эталон вышел за диапазон без конфликта — ограничение сохранено в отчёте.
 
-| GitHub |
-|---|
-|  |
+Интервальные гарантии v2 не перенесены на v3. Промышленная пригодность не установлена. Старый результат совпадения рейтинга с простым правилом в 1536 случаях остаётся историческим результатом v2.
 
-## Mine
+## Запуск и OpenEgiz
 
-<!-- Which part of a mining enterprise the Submission represents (open pit, underground mine, processing plant…), which objects are twins in OpenEgiz, how they are related, and where they are defined in the code. -->
+Команды локального и платформенного запуска — в README. Каталог модели, схема и адаптер используют единые идентификаторы. Свежесть и чтение из Ditto проверяются API; MQTT ACK отдельно не считается доказательством интеграции. Фактический статус и оставшиеся препятствия: `docs/RELEASE_STATUS.md`.
 
-## Modules and What-if Scenarios
 
-<!-- Modules: functions on top of the twin, from the Mine Map or your own. What-if Scenarios: changes of an operating condition that can be run on the Stand without changing the code (close a road, stop equipment…). Only what works on the Stand is taken into account. -->
+## Дополнение: метрическая схема и расширенная проверка
 
-| Module or What-if Scenario | What it does | How to see it on the Stand | How to undo it (scenarios) |
-|---|---|---|---|
-|  |  |  |  |
+В пространственном каталоге есть условные XYZ и проверка всех 9 длин (21,91 км). Интерфейс предоставляет метрическую проекцию, план и профиль, слои скорости воздуха, давления и CH4. Реальные маркшейдерские координаты не заявляются.
 
-## What works and what does not
+Новый заранее спланированный аудит 6048 случаев, 7 стратегий и ошибки измерений: `docs/SENSOR_UTILITY.md`. На 3456 случаях внутри сетки прогнозный выбор даёт 615 побед, 2841 равенство против текущего разброса; средняя W ниже на 44,0%. Приоритет метана лучше в среднем, поэтому универсальное превосходство не заявляется. Вне сетки есть 1323 исходных конфликта из 2592 случаев; после выбора на оставшихся случаях эталон включён лишь в 38,5%. Применимость к шахте требует другой валидации. 76 автоматических тестов пройдены.
 
-<!-- What has been verified, what is unfinished, which bugs are known. -->
-
-## Data and Assumptions
-
-<!--
-- Synthetic and real data.
-- Sources of parameters: equipment data sheets, reference literature, industrial safety regulations, datasets.
-- Datasets: source, license, how they are provided (in the repository or downloaded per the README).
-Confidential data of organizations and personal data are prohibited.
--->
-
-## Mine visualization
-
-<!-- Address on the Stand, dashboard or scene; what it shows. -->
-
-## Limitations
-
-## Presentation
-
-`presentation.pdf` in the repository root. Video (optional): <link>
-
----
-
-Platform: OpenEgiz v1.0.4.
+Живой парный ремонт и проверка геометрии через MQTT/Ditto: `python integration/smoke-sensor-utility.py`. Отчёт `docs/live-sensor-comparison.json` сохраняет одинаковый исходный опыт и три результата. Это инженерная проверка исполнения, не полевая оценка эффективности.

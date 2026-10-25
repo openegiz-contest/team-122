@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "checked_at_unix": 1792952423.8441825,
+  "model_signature": "98ac940c96d3be5c9045f5b68ddb3a1b39c685d86fb32387043f5ea9dea3c460",
+  "scenario": "Nominal known initial gas; all channels lost; declared gas x2; horizon 600 s; same paused replay for each arm",
+  "experiment": {
+    "schema_version": 3,
+    "model_signature": "98ac940c96d3be5c9045f5b68ddb3a1b39c685d86fb32387043f5ea9dea3c460",
+    "seed": 20261026,
+    "timeline": [
+      {
+        "kind": "command",
+        "data": {
+          "action": "pause"
+        }
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "scenario",
+          "name": "blind_all"
+        }
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "scenario",
+          "name": "gas"
+        }
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "horizon",
+          "value": 600
+        }
+      },
+      {
+        "kind": "command",
+        "data": {
+          "action": "speed",
+          "value": 10
+        }
+      }
+    ]
+  },
+  "experiment_sha256": "71836789578aaf9a78026d3d36dc2badca98f15bd50535e79a91301ac66b5440",
+  "results": {
+    "proposed": {
+      "sensor": "q_e2",
+      "source": "Ditto",
+      "experiment_id": "ebf07ba216224222ad22bdb21515b1e4",
+      "before_width": 1.59127277770568,
+      "decision": {
+        "sensor": "q_e2",
+        "before_width": 1.59127277770568,
+        "time": 0.0,
+        "target_time": 600.0,
+        "expected_gain": 0.08175346878102263,
+        "repair_due": 10.0,
+        "note": "Repair scheduled in simulation time; observed forecast widths logged in history.",
+        "completed": true,
+        "completed_at": 10.0,
+        "after_width_same_target": 1.4924711736236311,
+        "actual_gain": 0.09880160408204897
+      },
+      "cost": 1.0,
+      "gain_per_cost": 0.09880160408204897
+    },
+    "simple": {
+      "sensor": "q_e6",
+      "source": "Ditto",
+      "experiment_id": "372806f26c00493fbed76b1ce6cfde38",
+      "before_width": 1.59127277770568,
+      "decision": {
+        "sensor": "q_e6",
+        "before_width": 1.59127277770568,
+        "time": 0.0,
+        "target_time": 600.0,
+        "expected_gain": 0.08175346878102263,
+        "repair_due": 10.0,
+        "note": "Repair scheduled in simulation time; observed forecast widths logged in history.",
+        "completed": true,
+        "completed_at": 10.0,
+        "after_width_same_target": 1.4924711736236311,
+        "actual_gain": 0.09880160408204897
+      },
+      "cost": 1.0,
+      "gain_per_cost": 0.09880160408204897
+    },
+    "methane_priority": {
+      "sensor": "c_V9",
+      "source": "Ditto",
+      "experiment_id": "fc524c68831e4bb2bf19c81a349cb175",
+      "before_width": 1.59127277770568,
+      "decision": {
+        "sensor": "c_V9",
+        "before_width": 1.59127277770568,
+        "time": 0.0,
+        "target_time": 600.0,
+        "expected_gain": 4.440892098500626e-16,
+        "repair_due": 30.0,
+        "note": "Repair scheduled in simulation time; observed forecast widths logged in history.",
+        "completed": true,
+        "completed_at": 30.0,
+        "after_width_same_target": 1.59127277770568,
+        "actual_gain": 0.0
+      },
+      "cost": 2.0,
+      "gain_per_cost": 0.0
+    }
+  },
+  "spatial_objects_verified": 28,
+  "utility_report_cases": 6048,
+  "limitation": "One engineering demonstration, not an independent validation or a representative estimate of policy superiority."
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checked_at_unix": 1792952514.5841987,
+  "model": "gucheng-network-v3",
+  "source": "live MQTT -> Ditto -> UI API",
+  "checks": [
+    "28 typed Things read directly from Ditto with matching experiment, revision, state",
+    "Resistance command propagated through MQTT, Ditto children and UI API",
+    "Closed connection verified as zero-flow Thing",
+    "Delayed repair completed and measurement returned through Ditto",
+    "Scenario cancellation observed through platform",
+    "Live broker outage: stale snapshot returned 503, then Ditto data recovered; no local fallback"
+  ],
+  "outage_test": {
+    "broker_interrupted": true,
+    "stale_api_status": 503,
+    "recovered_source": "Ditto",
+    "checked_at_unix": 1792952600.0800428
+  }
+}
